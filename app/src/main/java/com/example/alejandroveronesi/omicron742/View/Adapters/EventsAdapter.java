@@ -73,14 +73,15 @@ public class EventsAdapter extends RecyclerView.Adapter implements View.OnClickL
     //ViewHolder
     public class ViewHolder extends RecyclerView.ViewHolder {
 
-        private TextView textViewId;
-        private TextView textViewTitle;
-        private ImageView imageViewThumbnailUrl;
+        private TextView eventName;
+        private TextView eventTime;
+        private TextView contact;
 
         public ViewHolder(View itemView) {
             super(itemView);
 
-//            textViewUrl = (TextView) itemView.findViewById(R.id.textView4);
+            eventName = (TextView) itemView.findViewById(R.id.textViewName);
+            eventTime = (TextView) itemView.findViewById(R.id.)
 
         }
         public void loadData(Event event) {

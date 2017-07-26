@@ -25,7 +25,7 @@
                 android:id="@+id/textView00"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Album Id:"
+                android:text="Evento: "
                 android:textColor="@android:color/black"
                 android:textStyle="bold"
                 android:layout_marginLeft="5dp"
@@ -33,10 +33,10 @@
                 android:layout_toRightOf="@id/image"
                 />
             <TextView
-                android:id="@+id/textView1"
+                android:id="@+id/textViewName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="text1"
+                android:text=".................."
                 android:layout_marginLeft="10dp"
                 android:layout_marginBottom="3dp"
 
@@ -45,7 +45,7 @@
                 android:id="@+id/textView11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Id:"
+                android:text="Minutos :"
                 android:textColor="@android:color/black"
                 android:textStyle="bold"
                 android:layout_marginBottom="3dp"
@@ -60,16 +60,15 @@
                 android:layout_height="wrap_content"
                 android:text="text2"
                 android:layout_marginBottom="3dp"
-
                 android:layout_marginLeft="10dp"
                 android:layout_toRightOf="@id/textView11"
-                android:layout_below="@id/textView1"
+                android:layout_below="@id/textViewName"
                 />
             <TextView
                 android:id="@+id/textView22"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Title:"
+                android:text="Contacto: "
                 android:textColor="@android:color/black"
                 android:textStyle="bold"
                 android:layout_marginLeft="5dp"

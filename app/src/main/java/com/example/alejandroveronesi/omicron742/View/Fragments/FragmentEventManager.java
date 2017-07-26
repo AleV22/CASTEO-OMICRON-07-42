@@ -37,6 +37,13 @@ public class FragmentEventManager extends Fragment {
 
         recyclerView.setAdapter(eventsAdapter);
 
+        eventsList.add(new Event("Llegada deposito 1",10,"Seguridad 1","41.40338, 2.17403"));
+        eventsList.add(new Event("Llegada deposito 2",5,"Seguridad 1","41.50338, 2.27403"));
+        eventsList.add(new Event("Llegada deposito 3",12,"Seguridad 1","41.60338, 2.37403"));
+        eventsList.add(new Event("Llegada deposito 4",20,"Seguridad 1","41.70338, 2.47403"));
+        eventsList.add(new Event("Llegada deposito 5",7,"Seguridad 1","41.80338, 2.57403"));
+        eventsList.add(new Event("Llegada deposito 6",13,"Seguridad 1","41.90338, 2.67403"));
+
         View.OnClickListener listener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -46,7 +53,7 @@ public class FragmentEventManager extends Fragment {
                 notifyActivities.receiveMessaje(event);
             }
         };
-        
+
         eventsAdapter.setMyListener(listener);
         return view;
     }
