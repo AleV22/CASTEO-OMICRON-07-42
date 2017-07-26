@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.alejandroveronesi.omicron742.LoginActivity">
+    tools:context="com.example.alejandroveronesi.omicron742.View.Activities.LoginActivity">
 
 
     <com.twitter.sdk.android.core.identity.TwitterLoginButton

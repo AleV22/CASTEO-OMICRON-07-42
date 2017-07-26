@@ -1,4 +1,4 @@
-package com.example.alejandroveronesi.omicron742;
+package com.example.alejandroveronesi.omicron742.View.Activities;
 
 import android.content.Intent;
 import android.support.annotation.IdRes;
@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.alejandroveronesi.omicron742.R;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.common.api.GoogleApiClient;

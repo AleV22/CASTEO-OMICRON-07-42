@@ -7,10 +7,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.alejandroveronesi.omicron742.Model.POJO.Event;
 import com.example.alejandroveronesi.omicron742.R;
+
+import java.util.List;
 
 
 public class FragmentEvent extends Fragment {
+
+    private List<Event> eventsList;
+
 
 
     @Override

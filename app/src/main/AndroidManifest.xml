@@ -29,9 +29,9 @@
         </receiver>
 
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".View.Activities.MainActivity">
         </activity>
-        <activity android:name=".LoginActivity">
+        <activity android:name=".View.Activities.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
