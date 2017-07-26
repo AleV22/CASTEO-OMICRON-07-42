@@ -3,6 +3,9 @@ package com.example.alejandroveronesi.omicron742.View.Activities;
 import android.content.Intent;
 import android.support.annotation.IdRes;
 import android.support.annotation.NonNull;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -12,6 +15,7 @@ import android.widget.Toast;
 
 import com.example.alejandroveronesi.omicron742.R;
 
+import com.example.alejandroveronesi.omicron742.View.Fragments.FragmentEventManager;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthCredential;
@@ -31,7 +35,7 @@ import com.twitter.sdk.android.tweetui.TweetUi;
 
 public class LoginActivity extends AppCompatActivity{
 
-    TwitterLoginButton loginButton;
+    private TwitterLoginButton loginButton;
     private FirebaseAuth mAuth;
 
 
@@ -53,6 +57,8 @@ public class LoginActivity extends AppCompatActivity{
                 // Do something with result, which provides a TwitterSession for making API calls
                 Toast.makeText(getApplicationContext(), "Success", Toast.LENGTH_SHORT).show();
                 handleTwitterSession(result.data);
+                intentTraveler();
+
             }
 
             @Override
@@ -63,9 +69,23 @@ public class LoginActivity extends AppCompatActivity{
             }
         });
 
+//        if (mAuth != null) {
+//            Fragment fragmentEventManager = new FragmentEventManager();
+//            traveler(fragmentEventManager);
+//        }
 
     }
 
+
+
+    //standard intent for activity
+    public void intentTraveler() {
+        Intent unIntent = new Intent(this, MainActivity.class);
+//        Bundle bundle = new Bundle();
+//
+//        unIntent.putExtras(bundle);
+        startActivity(unIntent);
+    }
 
 
     @Override
