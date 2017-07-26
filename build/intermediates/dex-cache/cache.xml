@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.android/build-cache/1c4807f40f69834ef9c139db8ca6b32f2cc39a88/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="5664aee50f2216099cc90c55768d3bbe0b075c74">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_97960785cff1dbc451954ca4aafee04edda6c48f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.android/build-cache/4b21469509c4ef48a0d195aee174a7e7461f4203/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="83546b0a7a55c89fcaa55ff282812a4e052e81fe">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_238c613657adb316e6aa18f454c90f6d79ba1e80/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.gradle/caches/modules-2/files-2.1/com.twitter/twitter-text/1.14.3/71218d7dd9435e8b43e5ccf117bec37cb78fa2eb/twitter-text-1.14.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="71218d7dd9435e8b43e5ccf117bec37cb78fa2eb">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/twitter-text-1.14.3_7a2ff28ca4f4902aaee27e8c10e1c0e932b816d5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.9.0/f824591a0016efbaeddb8300bee54832a1398cfa/okio-1.9.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.9.0_8c4b11f15342020d05475001664cafae8694fe09/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.android/build-cache/8d6a92ac9330c92632736cf63de46c98e1ac1ff9/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="6a022bf00ccd0948a8180c505e8e458bbddd43a6">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_85149382c0e0fd9b2b345723eef3e512029976a9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/disklrucache/4.0.0-RC0/46d23cdc19155c5f0d47ece99ca1c421346c1509/disklrucache-4.0.0-RC0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="46d23cdc19155c5f0d47ece99ca1c421346c1509">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/disklrucache-4.0.0-RC0_6f2cd930b2cf222ced85115e795e39fc28c11956/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_45b2d581efc0c24c876018261fe112b2484e5128/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.android/build-cache/c2f3c62b42dd93273bbd7ebd9bc5ad72710d6ce7/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e158f7f5ddd603bc14b3fb111424fc086853caa4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.android/build-cache/4e18e31e673de014e9142b023cb3080aaa029fb0/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="e699699fae0092703de1d02b217f43803d0f7e0a">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_98089343d3807782a1411b33faa20804d9f6bdf6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/4.0.0-RC0/eb86cd1d96acc30dcebf338abaf2c62ca28bf355/glide-4.0.0-RC0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="eb86cd1d96acc30dcebf338abaf2c62ca28bf355">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/glide-4.0.0-RC0_88501f08089ecad76cc1407a3a27791b4f27d616/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.1/2a8e0aa38a2e21cb39e2f5a7d6704cbdc941da0/gson-2.8.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="02a8e0aa38a2e21cb39e2f5a7d6704cbdc941da0">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.8.1_df91cd88132755fa583266db40668e83455d7341/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.4.2/ccde00f7ccc77af5a6d5752e2cb21f6d8998289f/okhttp-3.4.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="ccde00f7ccc77af5a6d5752e2cb21f6d8998289f">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.4.2_6ae11ca58838e6577ee8ef368e3f747daf95df9f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.android/build-cache/9f7714579aecf1aefef848e119aef773a100d1eb/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_86777d4ff487927acfbb59d67ea66f89f57a0ed4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.android/build-cache/7d070d171848bad8348fc31586d2fdc7f758945d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="c4f45092eee6cdf1a5dbd597b2b6819be652ce2e">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_891eccefb778d0a0bc02040201843045a4cbf327/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.android/build-cache/6cbca5f028a473290cd295d2f75c664dffb58ae3/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="88246166d5afb106f532f6e6deae683c66b42c89">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_47dffcf2413eeb9f17b3dc20aa868fc15d7b9369/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.android/build-cache/2ad0fcbb7dc1592973a53d3fda76c9fed707e33b/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="972ca945f0cf5ff0765ab94fa8e1a90661ea197a">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a94028eaba4bdf90fb846543500d5a4fb4689a1f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.android/build-cache/80d19eaffe7b7774233019e715f985153f3bd35b/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="684b132d394d746b6a5eeddb384aadd775ea5bdc">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e61ea59f7f03738ed753f71e7a1348f03220e154/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/picasso-2.5.2_de480ba6f0268ac6f13ae2343b7bc20e70e47e55/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.android/build-cache/d86f25ed6f37aa5ba943bfcfe67b5e952945f736/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="2640be449e78c2947f08c4f8fdc596faf6b450da">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_5e37d17d62664da98c9df56fb20fa9bf6da32a0f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/26.0.0-alpha1/support-annotations-26.0.0-alpha1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-26.0.0-alpha1_573c17f8f062ef9b0e7604f68830d936a1a78f38/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/gifdecoder/4.0.0-RC0/c64f5d4805b528de434a5a8bb9a8091b6f9cd1a7/gifdecoder-4.0.0-RC0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="c64f5d4805b528de434a5a8bb9a8091b6f9cd1a7">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/gifdecoder-4.0.0-RC0_d108485354a73f5c7eab383b6059a548c082138c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.android/build-cache/921cb11963747f946455fc53faebf53fd7fea55d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="47471eb19df288158b00b8d9cfa41bce7373f5cc">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_46f955a7406843b2ba2caf77ee0cdaadb6ce55a7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.android/build-cache/26bbc13ad2b64d8110ee3eeed38ec664cb4fa564/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_41ce4d101ba4bcac9e80948448a144e92dd87ef9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.android/build-cache/df2bc65d3fcad5b9defc6fd34e7dbe1156988e32/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="4373c433748652e9e7c20770f73ac14d852505dd">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1adf40e763aa2008b443782f4bc586173656cffb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="3a3454c3cb95c4907ce236a5637092e443de1921">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_85186f866035a87cffa3bcdf472dfdd222ecedfb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.android/build-cache/fcd68a2378e6424a1d433285656bba3697220ed8/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="cddcd0fb93bc70e27325f2f715b2710332004ebb">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_bcc91f296f5898029cb53a063b59eff3d626c9d6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.android/build-cache/37268db55528956fa115c86733a809edbae17858/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="9b3e203eac3707863ea1ec73c5a558d0bccb7e05">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3a5da4b28599977ceedcb91bdf0752519029d0a4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.android/build-cache/196cd1bda2ee438dba164ff63fe5e0f4bf80392c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_07bbb74d232c390b177de099f644e4e1e2b3d3be/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.android/build-cache/dcb9ffe7bf35899d43ae498e968918364a5cf9ec/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="a2af9c72ccaa4c5c049b500ca6ea664a4ce1f7d4">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0c5f9303aa468fd1d71a6b80aa8680b5238a8b0d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.2_0932576cc873fffd7a6079db8ca9e66eaa991e9b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.android/build-cache/1e4db0eaa929552527f7c4b6e01ec961c529f95a/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_dcc47c66296306981906e86c8c5ed5f0a006a4e9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.1.0/2de7cd8b95b7021b1d597f049bcb422055119f2c/retrofit-2.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/retrofit-2.1.0_b88da6aa5075082869fc1a36cff6abc881ab24eb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.android/build-cache/7ca262c9e3c5c13b5b13809746b946c0b2f2a957/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="952944218ecedea1554a513dec0c14d570642843">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d850640b6a6ef8dc604f768179cda02111efc93a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/annotations/4.0.0-RC0/d5dd0afc50069b7fa0fc12ac85f91efa8df4db67/annotations-4.0.0-RC0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="d5dd0afc50069b7fa0fc12ac85f91efa8df4db67">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/annotations-4.0.0-RC0_4a3338742445cf13bd2d6c36b186be49017f99b9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.1.0/aa557d71ead91cbf26e0c316a0f593d168303309/converter-gson-2.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="aa557d71ead91cbf26e0c316a0f593d168303309">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/converter-gson-2.1.0_1bf3a58355af0eeb5cb1ce3b525e2ec0514b5e62/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.android/build-cache/959273b3e4e37460727d680ae065ca1e3993c418/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_19abd86686f5f7df928df193e8662b9d35a6490c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.android/build-cache/d7739209f5039798d0012ec2c8e8f0b22185cea8/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="9935891f23923f39d002087085d9696568a9f657">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_21b7cedf48094fc9b29f7cf289ef40ff7b2b121a/classes.dex" />
+    </item>
+
+</items>

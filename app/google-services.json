@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "993762186072",
+    "project_id": "firebase-omicron742"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:993762186072:android:5c4c12c52c356ab2",
+        "android_client_info": {
+          "package_name": "com.example.alejandroveronesi.omicron742"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "993762186072-qkg9vikb6c5e9b9n23o6qed7es958pl7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.alejandroveronesi.omicron742",
+            "certificate_hash": "4ee7c10ad11ebe1b12cfe9a2e7a5d0ddf887ce2a"
+          }
+        },
+        {
+          "client_id": "993762186072-d2l3ucflf26p6l3kabi53m9fnj6celk2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLw1jvRh5AVXu43ETgEPWDYwYBO5nVKT8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
