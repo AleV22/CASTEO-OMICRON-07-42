@@ -9,7 +9,7 @@ public class Event {
     private String contact;
     private String position;
 
-    
+
 
 
 }
