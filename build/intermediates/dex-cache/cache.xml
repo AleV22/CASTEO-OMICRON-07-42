@@ -3,453 +3,156 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\Usuario\.android\build-cache\e19617404929633e3751b2132e926fbc6e5465df\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="9935891f23923f39d002087085d9696568a9f657">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2e7ffefcbd56f6b5da2b7aed72f445470d88413f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\.android\build-cache\a2ee0facb24298889038efb7cf0dcbd77492e993\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="2737331564e0084fc0eb30ba500564a6dbe5e98f">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3c80ae2ea7b287fe4a1ce42d90423949a5a275c8\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\.android\build-cache\5598dd9165e7503275c13e377015f3d2696b225c\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="86baa7d1051901fc1b8e7f596732f71f32175bde">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_eae10b2c5e3c6c6164c2cce9742e49abb1ae03ee\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\.android\build-cache\f9374668a23686cd114f07e8a1ac346257ba9907\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="e699699fae0092703de1d02b217f43803d0f7e0a">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_28cc6f083586860778359a63e98c9bfd9689eaa2\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="f4561bda326f5883649dd7737b3797a9a06b1cd5">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_ad043be4923a998eab25ba51f5eb9a7e9dc40cae\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\.android\build-cache\1763a0a8b892467c54e47403291a83755cfd2193\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="972ca945f0cf5ff0765ab94fa8e1a90661ea197a">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_33b8c630735c1266088e599c2630ab163e432d58\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\.android\build-cache\41dc7f7dd128cfcf0cad772281986a8b3e8bf06c\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2962d15065ecd88823271f4830fb627859a0f2e8\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\.android\build-cache\498683442cbbe227454e56cf1c1a0ecfa0d5e900\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_133fb75e6253de709caa5a516659cca4cd3d5b3a\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\disklrucache\4.0.0-RC0\46d23cdc19155c5f0d47ece99ca1c421346c1509\disklrucache-4.0.0-RC0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="46d23cdc19155c5f0d47ece99ca1c421346c1509">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\disklrucache-4.0.0-RC0_87118d966005a720330f9942fe2a5f4d80db0418\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.1.0\2de7cd8b95b7021b1d597f049bcb422055119f2c\retrofit-2.1.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\retrofit-2.1.0_774a68e471dc3d5b0129e76d929b774ea5ad9810\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\.android\build-cache\e2c6ddeeb22f077968e3bb871ba31abe4b96d5ea\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ca3c74277164e73207859c0f2cabcdd15ef2fd76\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\.android\build-cache\85226ff2390863bc488ccd573134616ee3f1ce85\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="2c1d9fbe7d2f686b3dcdbc3f63a983a211401ca3">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_155b5bb4c1c6a67d63b7d299172a5a0a502125ac\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\.android\build-cache\8d8ffb4c124b4c7692332a9f043a5ce4424a202d\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="5664aee50f2216099cc90c55768d3bbe0b075c74">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_941acb672f6ed21763a76de5a9006528c7da137f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\.android\build-cache\b85aebf42b91f78cb0076f6fbda8b669653a671b\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="4373c433748652e9e7c20770f73ac14d852505dd">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_13133493efe72f89a663d4f3bd0c44371d55ea30\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\26.0.0-alpha1\support-annotations-26.0.0-alpha1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="023ee503b631f69511e335a061ea008f8da60f40">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-26.0.0-alpha1_c4448fbf15754f6b2b09f24da7daa91867e3beba\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\.android\build-cache\f1eb8ae8fb71caf96b2668928823444446d30598\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="c4f45092eee6cdf1a5dbd597b2b6819be652ce2e">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ad4eb31053b240d5f9c884cb34685b81e9d7bed9\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\.android\build-cache\a26dd11e2607364a4caf332c52e09e2f10ffe38f\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="9a6350134db98fb39e212ddca5f0bad9280e8f3f">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_02e03c51d3c41b942b7eb3cce1c0cab460b8b583\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\.gradle\caches\modules-2\files-2.1\com.twitter\twitter-text\1.14.3\71218d7dd9435e8b43e5ccf117bec37cb78fa2eb\twitter-text-1.14.3.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="71218d7dd9435e8b43e5ccf117bec37cb78fa2eb">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\twitter-text-1.14.3_964ebb53737e2348ce173970cba27d649302b28d\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\.android\build-cache\3b1b38088db1f0223e1be92f5f7491124b31967f\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="684b132d394d746b6a5eeddb384aadd775ea5bdc">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8f161c39a300625bb55000b2478eec77617baceb\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\.android\build-cache\fdcd67a2cb5dcc0c84782e64938b6bf50537d3e0\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="dbbba1fc0f6c51382c3fa1f9223d1f6f9144f359">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e5300f02ee2177738d26e0f2232658fd5ae3526c\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\.android\build-cache\90270be2c66736b52bd8cd461d0b027a8f20a885\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="9e8c74e789b51b9da4070aeaed71bae36c3d244f">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d3665f2cdcb063fe45916a92ff05ae8a0e669840\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\.android\build-cache\71b62f5f7a613b974b55e08114892062d743dee0\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="cddcd0fb93bc70e27325f2f715b2710332004ebb">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8c4684240ad78c77aa12113cc733c0380c3db455\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.2_c0973166a181936ed666037cd8293ab4b76b1284\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\.android\build-cache\d5597c0350efaa07c5abd39c9f6acb14eaaa95e0\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3aed3e2663efd0e935bc4d1ef0263871d9919a14\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\.android\build-cache\2a99a8a512a6b3c506aa0ed8b2c6fab7c61c64dc\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="4262bcd49b19d558c241bf8c68470fcc6fa1ac84">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e3d9451d389706f24fe42894eb4f8c2493d9971a\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.9.0\f824591a0016efbaeddb8300bee54832a1398cfa\okio-1.9.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\okio-1.9.0_2f51351dfbee69091003071c22cdd8d8d4ec0865\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\annotations\4.0.0-RC0\d5dd0afc50069b7fa0fc12ac85f91efa8df4db67\annotations-4.0.0-RC0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="d5dd0afc50069b7fa0fc12ac85f91efa8df4db67">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\annotations-4.0.0-RC0_2035ce34e0d31f1b8a480d17b2e0ea62fb3b0464\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\.android\build-cache\640c2754a224573e6c015c4ede813636dfe9deaa\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="86e2c2399cfd7f8271b535b0e7d8ec092d0c6335">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f144c2386f945669f5b7322abbf01ea90e614792\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\4.0.0-RC0\eb86cd1d96acc30dcebf338abaf2c62ca28bf355\glide-4.0.0-RC0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="eb86cd1d96acc30dcebf338abaf2c62ca28bf355">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\glide-4.0.0-RC0_be898f418d34212f9abd120e6f9d50ef162c82be\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\.android\build-cache\372c3a4e6b8277c2988c2ea33d5e4a07366f3da1\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="9b3e203eac3707863ea1ec73c5a558d0bccb7e05">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_47bdcb6566a4824d6f5e8c0e639176e989765a9a\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\gifdecoder\4.0.0-RC0\c64f5d4805b528de434a5a8bb9a8091b6f9cd1a7\gifdecoder-4.0.0-RC0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="c64f5d4805b528de434a5a8bb9a8091b6f9cd1a7">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\gifdecoder-4.0.0-RC0_3c6b8b5ca46e0e586a76326df04b967255e1aefc\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\.android\build-cache\f48efb636776beadf57fe352f2566b07881d2ea6\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="4802b21cc23549f7eba5edb802241091ad998b35">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8fc7065a11728398f48c842f555094138b3a1e0b\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.8.1\2a8e0aa38a2e21cb39e2f5a7d6704cbdc941da0\gson-2.8.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="02a8e0aa38a2e21cb39e2f5a7d6704cbdc941da0">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.8.1_66e1c4fa3e931e561026cfff6ea4820f73680c01\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.4.2\ccde00f7ccc77af5a6d5752e2cb21f6d8998289f\okhttp-3.4.2.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="ccde00f7ccc77af5a6d5752e2cb21f6d8998289f">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-3.4.2_f93b2251daaffd5e9393a89230ae20cf35ca43c1\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\.android\build-cache\99f0bade1c122814e556a2301884c0a33983ad2e\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="83546b0a7a55c89fcaa55ff282812a4e052e81fe">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_10f2c46140a4a0fb4ecef5aa2ce3dd5791280866\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\picasso-2.5.2_491935b0ee6cfdbebc4ce38610bd2d65928b732d\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\.android\build-cache\c7f84eb54867fceae3606def970885c2290e2a31\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="fc5624185d414a0f572bfb3df7d841ceb335aef9">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8e5c37603bff7bebb3e87bbba2eb8a24fd6838fc\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\.android\build-cache\388208425f51123c012e7a020a212bf03a365ede\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="a71be5f29a1c1e3fd3e84472742668f101a5b936">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ebce27e76e5338af79a9462ddb8212ffee1fd184\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\.android\build-cache\599846ad067734fae70cca947c7cc8d5a4011ea7\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f959ba120bbf49d24f548c880118488211e5b833\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\.android\build-cache\ab9b4293ba294c59060fe068a4633f0e7dc93854\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="952944218ecedea1554a513dec0c14d570642843">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1ce10c89dbe359e0464b0ab77c4c0239021d3c14\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\.android\build-cache\39e7753465a736d1f27b9816f59230810ad40cda\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="88246166d5afb106f532f6e6deae683c66b42c89">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9263d120faa5edc5fd26366d01880d59750b79c6\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\.android\build-cache\d79db067b34abce3a82a307a939703a445f4b30e\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="2640be449e78c2947f08c4f8fdc596faf6b450da">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8dffcc296d0853f3c4afe81c8f0105edf610ddc1\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\.android\build-cache\67a06b5c7f0230cecc09018ec65ab51b24f57b0f\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="2a2d9cd43adbe7599a78f2293273a77881c1909a">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2f563d47dd76ba49f56e9b1c01bca7e9a5591df1\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\.android\build-cache\b2fb3c06b3b90b2a62fe6e30a441aa3f91bd39c0\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="6a022bf00ccd0948a8180c505e8e458bbddd43a6">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3c9280f9b7b470a130b28aa03fe9d812bfc6fa23\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\.android\build-cache\d81c4b8c417d1d143dcf7a93403c3f3555914e19\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_753dd36fd9485608e15ca1134f0699195182ca0e\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\.android\build-cache\ec8c836851bb3c36a6a4ee837085475a690b400e\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="47471eb19df288158b00b8d9cfa41bce7373f5cc">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ec5aa3f6e4ec94aec3461cf7c9e310e70c41a368\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\.android\build-cache\e2cd3bd257d2ff13692aa1c5ddf7b463a585728b\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="e176fd06c2ad5b50a2f5cb4de6000a83a7cb48f5">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8770f8b38fdebd7278017a7b4d5f4c8142d2a709\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\.android\build-cache\b35a584b169882a7afdb23add74ad0954e7f4aa6\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="a2af9c72ccaa4c5c049b500ca6ea664a4ce1f7d4">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9cb06b8195114b512da3c9dde50806e84063206b\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-gson\2.1.0\aa557d71ead91cbf26e0c316a0f593d168303309\converter-gson-2.1.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="aa557d71ead91cbf26e0c316a0f593d168303309">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\converter-gson-2.1.0_beada96e0c3ee483bd7f4dd76e9f51806adf5577\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.0"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_9e3decfd773f8a4a800bd53d5bd87837e4795f51\classes.dex" />
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_45b2d581efc0c24c876018261fe112b2484e5128/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.android/build-cache/9dbf8fcec2bfd330a75cdb36dc827dc1b821f954/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="86e2c2399cfd7f8271b535b0e7d8ec092d0c6335">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_5acb3288bfa700350a12d6ca7d0212e327d70b90/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.android/build-cache/1cdd5a79bac6d62a3404dbe7728e720ec915615e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="2c1d9fbe7d2f686b3dcdbc3f63a983a211401ca3">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7b4cd2fea56118047215bbf2e16d8f5d91fb6ad4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.android/build-cache/d0fd6577c7cd62b1ab7db9f936a39b8a22c4a440/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="2737331564e0084fc0eb30ba500564a6dbe5e98f">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6efe9b9e465612453017920c59417a472d27fe72/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.android/build-cache/8c5deef6315182f7d62ed1fbd45538319ad8fece/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="dbbba1fc0f6c51382c3fa1f9223d1f6f9144f359">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_42de53a201a4e539246276476039a9d12a5d0505/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.android/build-cache/61aa1d1cd8e013de398a2c23eb676740d2ebc91c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="4262bcd49b19d558c241bf8c68470fcc6fa1ac84">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_23c6472ca49223e1527c3eea6360edbc5a82c872/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.android/build-cache/a275e96c5a08e09170c40f59d79d71f0033cc095/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="4802b21cc23549f7eba5edb802241091ad998b35">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9a2df4d0a378b82062abf8aafdb44bf8be593561/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.android/build-cache/cbd548d1bdb79c51e34cdd0b600a4d8ba43be0d5/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="9a6350134db98fb39e212ddca5f0bad9280e8f3f">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d3e8b17e8f76743bbc1f1da1b885a70aedfe1acb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.android/build-cache/964357861e00ac0217e61894e8bf1d2aac9cb237/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="e176fd06c2ad5b50a2f5cb4de6000a83a7cb48f5">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_5fb4efa929f06ef0b6e3ce42567b49c4d49aa470/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.android/build-cache/605627299f7ac3a50a118178570806cae4488586/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="2a2d9cd43adbe7599a78f2293273a77881c1909a">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7255e00e9b75bf7f5ad125ff87235e0def4393a2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.android/build-cache/281242e0005ae418d81cdcdff05383174a7bb17b/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="86baa7d1051901fc1b8e7f596732f71f32175bde">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_24d66b97757683936bfb22a18910a8ce6a9e428e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.android/build-cache/d20b2d8f8dd17ebac33b5e82f2061a4b22c1428a/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="3560fc891bbecd8982acbace15ccead59c3fedd1">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_05856e6ce1cc9ab911a8de91a6cb752f2ff4aabf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.android/build-cache/532d4b449b932ed1dd7a237beae59f6ba80e3e9f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="a3d07dfddc7c3c7547fb953847589d586f1e2077">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b5d2bf830fa91cad2ddd4d82abf17986e691a0c3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.android/build-cache/43ac16b235b7a7a3da1b5128a7976b763c38504d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="a71be5f29a1c1e3fd3e84472742668f101a5b936">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3e9272befe84e0e3d8fa79365fbb0b0821fd8f1a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="71c283003be3faf046a8acebe674a65c8e5444ad">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_85186f866035a87cffa3bcdf472dfdd222ecedfb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.android/build-cache/50cfbfcbb1b0bed741cb4b22f28463c215927c11/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="fc5624185d414a0f572bfb3df7d841ceb335aef9">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b61faa640caffc44b31b59346f562e8e23aeb236/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alejandroveronesi/.android/build-cache/aa00c2d26a091c599c771dc2b75c12f6a2c1280d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="9e8c74e789b51b9da4070aeaed71bae36c3d244f">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0bfe5edee6770228f5f39a7244e58937877b0c8c/classes.dex" />
     </item>
 
 </items>
