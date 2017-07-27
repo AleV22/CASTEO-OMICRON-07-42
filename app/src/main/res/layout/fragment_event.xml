@@ -2,23 +2,68 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     tools:context="com.example.alejandroveronesi.omicron742.View.Fragments.FragmentEvent">
 
-    <TextView
-        android:id="@+id/tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="25dp"
-        android:text="Select a number..."
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        card_view:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:layout_margin="20dp"
+
+            android:text="Configuracion del Evento"
         />
 
-    <NumberPicker
-        android:id="@+id/np"
-        android:layout_width="90dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/tv"
-        android:theme="@style/AppTheme.Picker"
-
+        <EditText
+            android:id="@+id/nombreEvento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:layout_margin="20dp"
+            android:layout_below="@id/titulo"
+            android:text="(nombre del evento)"
         />
+
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nombreEvento"
+            android:layout_marginTop="100dp"
+            android:textSize="25dp"
+            android:layout_marginLeft="20dp"
+            android:text="Fijar Tiempo: "
+        />
+
+        <NumberPicker
+            android:id="@+id/np"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv"
+            android:layout_margin="30dp"
+            android:layout_below="@id/nombreEvento"
+            android:theme="@style/AppTheme.Picker"
+        />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
 
 </RelativeLayout>
