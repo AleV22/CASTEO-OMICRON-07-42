@@ -1,5 +1,6 @@
 package com.example.alejandroveronesi.omicron742.View.Activities;
 
+import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -17,7 +18,12 @@ public class MainActivity extends AppCompatActivity implements FragmentEventMana
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        FragmentEventManager fragmentEventManager = new FragmentEventManager();
+        Intent anIntent = getIntent();
+        Bundle bundle = anIntent.getExtras();
 
+        fragmentEventManager.setArguments(bundle);
+        traveler(fragmentEventManager);
 
     }
 
@@ -25,15 +31,14 @@ public class MainActivity extends AppCompatActivity implements FragmentEventMana
     public void traveler(Fragment fragmentName) {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.addToBackStack(null);
+//        fragmentTransaction.addToBackStack(null);
         fragmentTransaction.add(R.id.fragmentContainer, fragmentName).commit();
-
     }
 
     @Override
     public void receiveMessaje(Event event) {
-        Fragment fragmentEventManager = new FragmentEventManager();
-        traveler(fragmentEventManager);
-        
+//        FragmentEventManager fragmentEventManager = new FragmentEventManager();
+//        traveler(fragmentEventManager);
     }
+
 }

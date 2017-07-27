@@ -89,7 +89,7 @@ public class EventsAdapter extends RecyclerView.Adapter implements View.OnClickL
         public void loadData(Event event) {
 
             eventName.setText(event.getEventName());
-            eventTime.setText(event.getEventTime());
+            eventTime.setText(event.getEventTime().toString());
             contact.setText(event.getContact());
 
         }

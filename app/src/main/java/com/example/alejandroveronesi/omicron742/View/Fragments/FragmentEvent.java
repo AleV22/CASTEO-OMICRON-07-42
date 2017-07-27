@@ -17,8 +17,6 @@ public class FragmentEvent extends Fragment {
 
     private List<Event> eventsList;
 
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
