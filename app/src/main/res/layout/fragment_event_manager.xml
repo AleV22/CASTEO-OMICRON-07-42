@@ -1,28 +1,40 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context="com.example.alejandroveronesi.omicron742.View.Fragments.FragmentEventManager">
 
+
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
         android:gravity="end"
         >
 
-        <Button
-            android:id="@+id/newEvent"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
 
     </LinearLayout>
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    </android.support.v7.widget.RecyclerView>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/newEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/colorPrimary"
+        android:src="@drawable/ic_add_black_24dp"
+        app:layout_anchor="@id/recyclerView"
+        app:layout_anchorGravity="top|right"
+        android:layout_margin="10dp"
+        android:elevation="10dp"
+        app:fabSize="normal"
+        />
 
-</LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
