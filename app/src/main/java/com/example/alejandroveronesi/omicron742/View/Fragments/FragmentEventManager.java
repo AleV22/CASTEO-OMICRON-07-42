@@ -2,7 +2,10 @@ package com.example.alejandroveronesi.omicron742.View.Fragments;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -11,6 +14,7 @@ import android.view.ViewGroup;
 
 import com.example.alejandroveronesi.omicron742.Model.POJO.Event;
 import com.example.alejandroveronesi.omicron742.R;
+import com.example.alejandroveronesi.omicron742.View.Activities.MainActivity;
 import com.example.alejandroveronesi.omicron742.View.Adapters.EventsAdapter;
 
 import java.util.ArrayList;
@@ -21,6 +25,7 @@ public class FragmentEventManager extends Fragment {
     private List<Event> eventsList;
     private EventsAdapter eventsAdapter;
     private NotifyActivities notifyActivities;
+    private FloatingActionButton newEventButton;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -55,11 +60,22 @@ public class FragmentEventManager extends Fragment {
         };
 
         eventsAdapter.setMyListener(listener);
+
+        newEventButton = (FloatingActionButton) view.findViewById(R.id.newEvent);
+        newEventButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                notifyActivities.newEventPage();
+            }
+        });
+
         return view;
     }
 
     public interface NotifyActivities {
         public void receiveMessaje(Event event);
+        public void newEventPage();
+
     }
 
     @Override
@@ -67,5 +83,6 @@ public class FragmentEventManager extends Fragment {
         super.onAttach(context);
         this.notifyActivities = (NotifyActivities) context;
     }
+
 
 }

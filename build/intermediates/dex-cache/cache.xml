@@ -12,21 +12,30 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="284f9221a057e1b1c323f632d013a4828c916ce9">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_ad043be4923a998eab25ba51f5eb9a7e9dc40cae\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\Usuario\.android\build-cache\7893f89d4e46ce2e77b816738a44c17707acc206\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.0"
         sha1="a3d07dfddc7c3c7547fb953847589d586f1e2077">
         <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_115bdc430130c7c75d6fa6b908be54fa95b6e2df\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_9e3decfd773f8a4a800bd53d5bd87837e4795f51\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="284f9221a057e1b1c323f632d013a4828c916ce9">
+        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_ad043be4923a998eab25ba51f5eb9a7e9dc40cae\classes.dex" />
     </item>
 
 </items>

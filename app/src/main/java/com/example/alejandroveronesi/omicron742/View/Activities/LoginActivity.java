@@ -138,11 +138,6 @@ public class LoginActivity extends AppCompatActivity{
     //standard intent for activity
     public void intentTraveler() {
         Intent unIntent = new Intent(this, MainActivity.class);
-        Bundle bundle = new Bundle();
-        unIntent.putExtras(bundle);
-
-
-
         startActivity(unIntent);
     }
 

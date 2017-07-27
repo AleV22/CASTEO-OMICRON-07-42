@@ -9,6 +9,7 @@ import android.os.Bundle;
 
 import com.example.alejandroveronesi.omicron742.Model.POJO.Event;
 import com.example.alejandroveronesi.omicron742.R;
+import com.example.alejandroveronesi.omicron742.View.Fragments.FragmentEvent;
 import com.example.alejandroveronesi.omicron742.View.Fragments.FragmentEventManager;
 
 public class MainActivity extends AppCompatActivity implements FragmentEventManager.NotifyActivities {
@@ -19,10 +20,6 @@ public class MainActivity extends AppCompatActivity implements FragmentEventMana
         setContentView(R.layout.activity_main);
 
         FragmentEventManager fragmentEventManager = new FragmentEventManager();
-//        Intent anIntent = getIntent();
-//        Bundle bundle = anIntent.getExtras();
-//
-//        fragmentEventManager.setArguments(bundle);
         traveler(fragmentEventManager);
 
     }
@@ -32,12 +29,18 @@ public class MainActivity extends AppCompatActivity implements FragmentEventMana
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 //        fragmentTransaction.addToBackStack(null);
-        fragmentTransaction.add(R.id.fragmentContainer, fragmentName).commit();
+        fragmentTransaction.replace(R.id.fragmentContainer, fragmentName).commit();
     }
 
     @Override
     public void receiveMessaje(Event event) {
 
+    }
+
+    @Override
+    public void newEventPage() {
+        FragmentEvent fragmentEvent = new FragmentEvent();
+        traveler(fragmentEvent);
     }
 
 }
