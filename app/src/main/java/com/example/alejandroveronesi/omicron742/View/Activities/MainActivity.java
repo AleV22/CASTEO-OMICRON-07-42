@@ -19,10 +19,10 @@ public class MainActivity extends AppCompatActivity implements FragmentEventMana
         setContentView(R.layout.activity_main);
 
         FragmentEventManager fragmentEventManager = new FragmentEventManager();
-        Intent anIntent = getIntent();
-        Bundle bundle = anIntent.getExtras();
-
-        fragmentEventManager.setArguments(bundle);
+//        Intent anIntent = getIntent();
+//        Bundle bundle = anIntent.getExtras();
+//
+//        fragmentEventManager.setArguments(bundle);
         traveler(fragmentEventManager);
 
     }
@@ -37,8 +37,7 @@ public class MainActivity extends AppCompatActivity implements FragmentEventMana
 
     @Override
     public void receiveMessaje(Event event) {
-//        FragmentEventManager fragmentEventManager = new FragmentEventManager();
-//        traveler(fragmentEventManager);
+
     }
 
 }
