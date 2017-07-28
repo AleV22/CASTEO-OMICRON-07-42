@@ -18,7 +18,6 @@ import java.util.List;
 
 public class FragmentEvent extends Fragment {
 
-    private List<Event> eventsList;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -33,7 +32,6 @@ public class FragmentEvent extends Fragment {
         //Set TextView text color
         tv.setTextColor(Color.parseColor("#ffd32b3b"));
 
-        //Populate NumberPicker values from minimum and maximum value range
         //Set the minimum value of NumberPicker
         np.setMinValue(0);
         //Specify the maximum value/number of NumberPicker
