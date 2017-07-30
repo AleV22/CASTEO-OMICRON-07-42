@@ -51,7 +51,7 @@ public class FragmentEvent extends Fragment implements AdapterView.OnItemSelecte
             @Override
             public void onValueChange(NumberPicker picker, int oldVal, int newVal){
                 //Display the newly selected number from picker
-                tv.setText( "T limite = " + newVal  );
+                tv.setText( "T limite: " + newVal  );
             }
         });
 
