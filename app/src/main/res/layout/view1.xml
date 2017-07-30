@@ -8,93 +8,72 @@
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_marginRight="12dp"
         android:layout_marginLeft="12dp"
-        card_view:cardElevation="5dp">
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="15dp"
+        card_view:cardCornerRadius="20dp"
+        card_view:cardElevation="15dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <ImageView
-                android:id="@+id/image"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/sand" />
-
             <TextView
-                android:id="@+id/textView00"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="3dp"
-                android:layout_marginLeft="5dp"
-                android:layout_toRightOf="@id/image"
-                android:text="Evento: "
-                android:textSize="20dp"
-                android:textColor="@android:color/black"
-                android:textStyle="bold" />
+                android:id="@+id/image"
+                android:layout_width="70dp"
+                android:layout_height="100dp"
+                android:background="@color/colorPrimarySuperDark" />
 
             <TextView
                 android:id="@+id/textViewName"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="3dp"
                 android:layout_marginLeft="10dp"
-                android:layout_toRightOf="@id/textView00"
-                android:textSize="20dp"
-
-                android:text=".................." />
-
-            <TextView
-                android:id="@+id/textView11"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/textView00"
-                android:layout_marginBottom="3dp"
-                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/image"
-                android:textSize="20dp"
-
-                android:text="Minutos :"
+                android:text="EVENTO"
                 android:textColor="@android:color/black"
+                android:textSize="30dp"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textViewTime"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/textViewName"
-                android:layout_marginBottom="3dp"
+                android:layout_alignLeft="@id/image"
+                android:layout_centerVertical="true"
                 android:layout_marginLeft="10dp"
-                android:layout_toRightOf="@id/textView11"
-                android:textSize="20dp"
-
-                android:text="....................." />
+                android:layout_toLeftOf="@+id/textView22"
+                android:layout_toStartOf="@+id/textView22"
+                android:fontFamily="sans-serif-condensed"
+                android:text="15"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:textSize="45dp" />
 
             <TextView
                 android:id="@+id/textView22"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/textView11"
-                android:layout_marginLeft="5dp"
+                android:layout_below="@id/textViewName"
+                android:layout_marginLeft="10dp"
                 android:layout_toRightOf="@id/image"
                 android:text="Contacto: "
-                android:textSize="20dp"
-
                 android:textColor="@android:color/black"
+
+                android:textSize="20dp"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textViewContact"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/textViewTime"
+                android:layout_alignBottom="@id/textView22"
                 android:layout_marginLeft="5dp"
-                android:textSize="20dp"
-
                 android:layout_toRightOf="@id/textView22"
-                android:text="............." />
+                android:text="............."
+                android:textSize="20dp" />
 
         </RelativeLayout>
     </android.support.v7.widget.CardView>
