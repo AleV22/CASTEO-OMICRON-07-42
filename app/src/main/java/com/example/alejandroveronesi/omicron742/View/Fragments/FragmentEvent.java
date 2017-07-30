@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.NumberPicker;
 import android.widget.Spinner;
@@ -22,7 +23,7 @@ import java.util.List;
 import static com.example.alejandroveronesi.omicron742.R.id.parent;
 
 
-public class FragmentEvent extends Fragment {
+public class FragmentEvent extends Fragment implements AdapterView.OnItemSelectedListener {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -54,6 +55,29 @@ public class FragmentEvent extends Fragment {
             }
         });
 
+        Spinner spinner = (Spinner) view.findViewById(R.id.menuContactos);
+
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getContext(),R.array.planets_array, android.R.layout.simple_spinner_item);
+
+        // Specify the layout to use when the list of choices appears
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        // Apply the adapter to the spinner
+        spinner.setAdapter(adapter);
+
+        spinner.setOnItemSelectedListener(this);
+
         return view;
     }
+
+    public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
+
+        String sSelected = parent.getItemAtPosition(pos).toString();
+        Toast.makeText(getContext(),sSelected,Toast.LENGTH_SHORT).show();
+    }
+
+    public void onNothingSelected(AdapterView<?> parent) {
+        // Another interface callback
+    }
+
 }
