@@ -36,7 +36,7 @@ public class FragmentEvent extends Fragment implements AdapterView.OnItemSelecte
         NumberPicker np = (NumberPicker) view.findViewById(R.id.np);
 
         //Set TextView text color
-        tv.setTextColor(Color.parseColor("#ffd32b3b"));
+        tv.setTextColor(getResources().getColorStateList(R.color.colorPrimaryDark));
 
         //Set the minimum value of NumberPicker
         np.setMinValue(0);
@@ -51,7 +51,7 @@ public class FragmentEvent extends Fragment implements AdapterView.OnItemSelecte
             @Override
             public void onValueChange(NumberPicker picker, int oldVal, int newVal){
                 //Display the newly selected number from picker
-                tv.setText("Tiempo limite: " + newVal);
+                tv.setText( "T limite = " + newVal  );
             }
         });
 

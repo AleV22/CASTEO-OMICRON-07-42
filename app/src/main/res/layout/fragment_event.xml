@@ -9,11 +9,10 @@
         android:id="@+id/cardView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="15dp"
-        android:layout_marginRight="12dp"
-        android:layout_marginLeft="12dp"
-        android:layout_marginBottom="15dp"
-        card_view:cardElevation="5dp">
+
+        card_view:cardCornerRadius="20dp"
+        android:layout_margin="15dp"
+        card_view:cardElevation="15dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -33,10 +32,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/nombreEvento"
-            android:layout_marginTop="100dp"
-            android:textSize="25dp"
+            android:layout_marginTop="85dp"
+            android:textSize="45dp"
             android:layout_marginLeft="20dp"
-            android:text="Fijar Tiempo: "
+            android:text="XX mins"
         />
 
         <NumberPicker
@@ -44,7 +43,7 @@
             android:layout_width="110dp"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/tv"
-            android:layout_margin="30dp"
+            android:layout_margin="20dp"
             android:layout_below="@id/nombreEvento"
             android:theme="@style/AppTheme.Picker"
         />
@@ -53,9 +52,9 @@
                 android:id="@+id/menuContactos"
                 android:spinnerMode="dropdown"
                 android:layout_width="300dp"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:layout_below="@id/np"
-                android:textSize="25dp"
+                android:textSize="35dp"
                 android:layout_marginLeft="20dp"
                 android:hint="(Seleccionar Contacto)"
                 />
@@ -69,8 +68,8 @@
                 android:text="Crear Evento"
                 android:textAllCaps="false"
                 android:textSize="25dp"
-                android:padding="10dp"
-                android:backgroundTint="@color/colorPrimary"
+                android:padding="15dp"
+                android:backgroundTint="@color/colorPrimarySuperDark"
                 />
 
         </RelativeLayout>
