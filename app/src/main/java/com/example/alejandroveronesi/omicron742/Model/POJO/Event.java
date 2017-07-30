@@ -11,11 +11,10 @@ public class Event {
 
 
     //constructor
-    public Event(String eventName, Integer eventTime, String contact, String position) {
+    public Event(String eventName, Integer eventTime, String contact) {
         this.eventName = eventName;
         this.eventTime = eventTime;
         this.contact = contact;
-        this.position = position;
     }
 
     //getters, setters

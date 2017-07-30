@@ -80,9 +80,9 @@ public class EventsAdapter extends RecyclerView.Adapter implements View.OnClickL
         public ViewHolder(View itemView) {
             super(itemView);
 
-            eventName = (TextView) itemView.findViewById(R.id.textViewName);
-            eventTime = (TextView) itemView.findViewById(R.id.textViewTime);
-            contact = (TextView) itemView.findViewById(R.id.textViewContact);
+            eventName = itemView.findViewById(R.id.textViewName);
+            eventTime = itemView.findViewById(R.id.textViewTime);
+            contact = itemView.findViewById(R.id.textViewContact);
 
         }
 
