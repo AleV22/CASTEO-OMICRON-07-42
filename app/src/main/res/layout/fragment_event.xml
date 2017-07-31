@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:textSize="25dp"
             android:layout_marginLeft="20dp"
-            android:text="(nombre del evento)"
+            android:hint="(nombre del evento)"
         />
 
         <TextView

@@ -36,6 +36,7 @@ public class FragmentEvent extends Fragment implements AdapterView.OnItemSelecte
     private Button createEventButton;
     private Integer timeSelected;
     private String contactSelected;
+    private EditText eventInput;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -79,38 +80,40 @@ public class FragmentEvent extends Fragment implements AdapterView.OnItemSelecte
         spinner.setOnItemSelectedListener(this);
 
         //Firebase database creation
-        FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
-        DatabaseReference event = firebaseDatabase.getReferenceFromUrl("https://fir-omicron742.firebaseio.com/" + "events");
-
-        event.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-
-                for (DataSnapshot childSnapshot : dataSnapshot.getChildren()) {
-                    Event event = childSnapshot.getValue(Event.class);
-                    
-                }
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        });
+//        FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
+//        DatabaseReference event = firebaseDatabase.getReferenceFromUrl("https://fir-omicron742.firebaseio.com/" + "events");
+//
+//        event.addListenerForSingleValueEvent(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(DataSnapshot dataSnapshot) {
+//
+//                for (DataSnapshot childSnapshot : dataSnapshot.getChildren()) {
+//                    Event event = childSnapshot.getValue(Event.class);
+//
+//                }
+//            }
+//
+//            @Override
+//            public void onCancelled(DatabaseError databaseError) {
+//
+//            }
+//        });
 
 
 
         //action for createEvent button
         createEventButton = view.findViewById(R.id.createEventButton);
+
+        eventInput = view.findViewById(R.id.nombreEvento);
+
         createEventButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                EditText eventInput = (EditText) view.findViewById(R.id.nombreEvento);
+
                 String eventName = eventInput.getText().toString();
                 Event createdEvent = new Event(eventName, timeSelected, contactSelected);
-
-
+                Toast.makeText(getContext(), "evento: " + eventName + timeSelected + contactSelected, Toast.LENGTH_SHORT).show();
 
 
             }

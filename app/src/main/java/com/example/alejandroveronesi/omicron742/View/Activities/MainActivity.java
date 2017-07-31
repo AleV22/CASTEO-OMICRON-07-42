@@ -11,6 +11,7 @@ import com.example.alejandroveronesi.omicron742.Model.POJO.Event;
 import com.example.alejandroveronesi.omicron742.R;
 import com.example.alejandroveronesi.omicron742.View.Fragments.FragmentEvent;
 import com.example.alejandroveronesi.omicron742.View.Fragments.FragmentEventManager;
+import com.example.alejandroveronesi.omicron742.View.Fragments.FragmentStartEvent;
 
 public class MainActivity extends AppCompatActivity implements FragmentEventManager.NotifyActivities {
 
@@ -19,8 +20,11 @@ public class MainActivity extends AppCompatActivity implements FragmentEventMana
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         FragmentEventManager fragmentEventManager = new FragmentEventManager();
         traveler(fragmentEventManager);
+//        FragmentStartEvent fragmentStartEvent = new FragmentStartEvent();
+//        traveler(fragmentStartEvent);
 
     }
 
