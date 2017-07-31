@@ -18,6 +18,11 @@ import android.widget.Toast;
 
 import com.example.alejandroveronesi.omicron742.Model.POJO.Event;
 import com.example.alejandroveronesi.omicron742.R;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -73,6 +78,28 @@ public class FragmentEvent extends Fragment implements AdapterView.OnItemSelecte
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(this);
 
+        //Firebase database creation
+        FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
+        DatabaseReference event = firebaseDatabase.getReferenceFromUrl("https://fir-omicron742.firebaseio.com/" + "events");
+
+        event.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+
+                for (DataSnapshot childSnapshot : dataSnapshot.getChildren()) {
+                    Event event = childSnapshot.getValue(Event.class);
+                    
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
+
+
         //action for createEvent button
         createEventButton = view.findViewById(R.id.createEventButton);
         createEventButton.setOnClickListener(new View.OnClickListener() {
@@ -82,6 +109,9 @@ public class FragmentEvent extends Fragment implements AdapterView.OnItemSelecte
                 EditText eventInput = (EditText) view.findViewById(R.id.nombreEvento);
                 String eventName = eventInput.getText().toString();
                 Event createdEvent = new Event(eventName, timeSelected, contactSelected);
+
+
+
 
             }
         });
