@@ -40,10 +40,6 @@ public class FragmentEvent extends Fragment implements AdapterView.OnItemSelecte
 
 
 
-
-
-
-
         //Number picker selector:
         final TextView tv = (TextView) view.findViewById(R.id.tv);
         NumberPicker np = (NumberPicker) view.findViewById(R.id.np);
