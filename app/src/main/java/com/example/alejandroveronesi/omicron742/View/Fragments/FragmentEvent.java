@@ -79,25 +79,7 @@ public class FragmentEvent extends Fragment implements AdapterView.OnItemSelecte
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(this);
 
-        //Firebase database creation
-//        FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
-//        DatabaseReference event = firebaseDatabase.getReferenceFromUrl("https://fir-omicron742.firebaseio.com/" + "events");
-//
-//        event.addListenerForSingleValueEvent(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(DataSnapshot dataSnapshot) {
-//
-//                for (DataSnapshot childSnapshot : dataSnapshot.getChildren()) {
-//                    Event event = childSnapshot.getValue(Event.class);
-//
-//                }
-//            }
-//
-//            @Override
-//            public void onCancelled(DatabaseError databaseError) {
-//
-//            }
-//        });
+
 
 
 
