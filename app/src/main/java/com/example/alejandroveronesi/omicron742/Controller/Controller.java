@@ -9,7 +9,7 @@ import java.util.List;
 
 public class Controller {
 
-    public void getListPaints(final ResultListener<List<Event>> viewListener){
+    public void getEventList(final ResultListener<List<Event>> viewListener){
         DAOEvents daoEvents = new DAOEvents();
         daoEvents.obtainEvents(new ResultListener<List<Event>>() {
             @Override
