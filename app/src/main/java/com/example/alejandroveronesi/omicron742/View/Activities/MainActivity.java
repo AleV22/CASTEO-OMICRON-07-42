@@ -38,6 +38,14 @@ public class MainActivity extends AppCompatActivity implements FragmentEventMana
 
     @Override
     public void receiveMessaje(Event event) {
+        Bundle bundle = new Bundle();
+        bundle.putString(FragmentStartEvent.EVENT_NAME, event.getEventName());
+        bundle.putInt(FragmentStartEvent.EVENT_TIME, event.getEventTime());
+        bundle.putString(FragmentStartEvent.EVENT_EMAIL, event.getContact());
+
+        FragmentStartEvent fragmentStartEvent = new FragmentStartEvent();
+        fragmentStartEvent.setArguments(bundle);
+        pasarFragment(fragmentStartEvent,true);
 
     }
 
@@ -45,6 +53,17 @@ public class MainActivity extends AppCompatActivity implements FragmentEventMana
     public void newEventPage() {
         FragmentEvent fragmentEvent = new FragmentEvent();
         traveler(fragmentEvent);
+    }
+
+
+    public void pasarFragment(Fragment fragment, Boolean back){
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.fragmentContainer, fragment);
+        if (back){
+            fragmentTransaction.addToBackStack(null);
+        }
+        fragmentTransaction.commit();
     }
 
 }

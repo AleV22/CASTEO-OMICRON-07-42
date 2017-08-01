@@ -55,6 +55,11 @@ public class EventsAdapter extends RecyclerView.Adapter implements View.OnClickL
     }
 
     @Override
+    public long getItemId(int position) {
+        return position;
+    }
+
+    @Override
     public int getItemCount() {
         return eventsList.size();
     }

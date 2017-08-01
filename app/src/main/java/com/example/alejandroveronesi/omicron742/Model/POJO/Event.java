@@ -6,14 +6,16 @@ public class Event {
 
     private String eventName;
     private Integer eventTime;
+    private Integer phone;
     private String contact;
     private String position;
 
 
     //constructor
-    public Event(String eventName, Integer eventTime, String contact) {
+    public Event(String eventName, Integer eventTime, Integer phone, String contact) {
         this.eventName = eventName;
         this.eventTime = eventTime;
+        this.phone = phone;
         this.contact = contact;
     }
 
@@ -34,4 +36,7 @@ public class Event {
         return position;
     }
 
+    public Integer getPhone() {
+        return phone;
+    }
 }

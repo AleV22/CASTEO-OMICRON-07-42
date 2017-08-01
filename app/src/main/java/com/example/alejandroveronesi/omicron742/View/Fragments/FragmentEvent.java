@@ -35,6 +35,7 @@ public class FragmentEvent extends Fragment implements AdapterView.OnItemSelecte
 
     private Button createEventButton;
     private Integer timeSelected;
+    private Integer phoneSelected;
     private String contactSelected;
     private EditText eventInput;
 
@@ -94,7 +95,7 @@ public class FragmentEvent extends Fragment implements AdapterView.OnItemSelecte
 
 
                 String eventName = eventInput.getText().toString();
-                Event createdEvent = new Event(eventName, timeSelected, contactSelected);
+                Event createdEvent = new Event(eventName, timeSelected, phoneSelected, contactSelected);
                 Toast.makeText(getContext(), "evento: " + eventName + timeSelected + contactSelected, Toast.LENGTH_SHORT).show();
 
 

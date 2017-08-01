@@ -42,17 +42,16 @@ public class FragmentEventManager extends Fragment {
 
         recyclerView.setAdapter(eventsAdapter);
 
-        eventsList.add(new Event("Llegada deposito A",10000,"Seguridad 1"));
-        eventsList.add(new Event("Llegada a casa",5000,"Casa"));
-        eventsList.add(new Event("Llegada al trabajo",12000,"Recepcion"));
-        eventsList.add(new Event("Llegada a la quinta",20000,"Casa"));
-        eventsList.add(new Event("Llegada al bunker",7000,"Control"));
-        eventsList.add(new Event("Llegada al banco",13000,"Blindados"));
+        eventsList.add(new Event("Llegada deposito A",50000, 44445555, "Seguridad 1"));
+        eventsList.add(new Event("Llegada a casa",112000, 44445555, "Casa"));
+        eventsList.add(new Event("Llegada al trabajo",12000, 44445555, "Recepcion"));
+        eventsList.add(new Event("Llegada a la quinta",20000, 44445555, "Casa"));
+        eventsList.add(new Event("Llegada al bunker",7000, 44445555, "Control"));
+        eventsList.add(new Event("Llegada al banco",13000, 44445555, "Blindados"));
 
         View.OnClickListener listener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 Integer position = recyclerView.getChildAdapterPosition(v);
                 Event event = eventsAdapter.getItem(position);
                 notifyActivities.receiveMessaje(event);

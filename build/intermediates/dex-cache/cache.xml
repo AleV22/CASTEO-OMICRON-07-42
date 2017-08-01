@@ -3,39 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\Usuario\.android\build-cache\701fa8b676177bfdfae42656b43a36ce7fa56476\output\jars\classes.jar"
+        jar="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.0"
-        sha1="3560fc891bbecd8982acbace15ccead59c3fedd1">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_740c0d0df619ec7821cc60f816d633250ee6bed8\classes.dex" />
+        sha1="769b3b689f3862cc3a4d10efce3bf25698f0281b">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_85186f866035a87cffa3bcdf472dfdd222ecedfb/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Usuario\.android\build-cache\7893f89d4e46ce2e77b816738a44c17707acc206\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="a3d07dfddc7c3c7547fb953847589d586f1e2077">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_115bdc430130c7c75d6fa6b908be54fa95b6e2df\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.0"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_9e3decfd773f8a4a800bd53d5bd87837e4795f51\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="284f9221a057e1b1c323f632d013a4828c916ce9">
-        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_ad043be4923a998eab25ba51f5eb9a7e9dc40cae\classes.dex" />
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_45b2d581efc0c24c876018261fe112b2484e5128/classes.dex" />
     </item>
 
 </items>
