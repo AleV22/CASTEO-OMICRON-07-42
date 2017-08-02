@@ -22,11 +22,10 @@ public class DAOEvents {
     public FirebaseDatabase database;
 
 
-    //    private DatabaseReference myRef = firebaseDatabase.getReferenceFromUrl("https://fir-omicron742.firebaseio.com/" + "eventList");
 
     public void obtainEventsFromDatabase(final ResultListener<List<Event>> listener) {
         database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference();
+        DatabaseReference myRef = database.getReferenceFromUrl("https://fir-omicron742.firebaseio.com/"+ FirebaseAuth.getInstance().getCurrentUser().getUid() +  "/eventList");
 
         myRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -40,11 +39,12 @@ public class DAOEvents {
 
                 listener.finish(eventList);
             }
-
             @Override
             public void onCancelled(DatabaseError databaseError) {
             }
         });
+
+
 
 
     }
