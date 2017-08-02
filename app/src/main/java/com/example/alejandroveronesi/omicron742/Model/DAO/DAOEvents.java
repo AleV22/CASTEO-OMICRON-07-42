@@ -1,10 +1,12 @@
 package com.example.alejandroveronesi.omicron742.Model.DAO;
 
 
+import android.content.Context;
 import android.preference.PreferenceManager;
 
 import com.example.alejandroveronesi.omicron742.Model.POJO.Event;
 import com.example.alejandroveronesi.omicron742.util.ResultListener;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -17,29 +19,66 @@ import java.util.List;
 public class DAOEvents {
 
     private List<Event> eventList = new ArrayList<>();
+    public FirebaseDatabase database;
 
-    public void obtainEvents(final ResultListener<List<Event>> listener) {
 
-        //Firebase database creation
-        FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
-        DatabaseReference event = firebaseDatabase.getReferenceFromUrl("https://fir-omicron742.firebaseio.com/" + "eventList");
+    //    private DatabaseReference myRef = firebaseDatabase.getReferenceFromUrl("https://fir-omicron742.firebaseio.com/" + "eventList");
 
-        event.addListenerForSingleValueEvent(new ValueEventListener() {
+    public void obtainEventsFromDatabase(final ResultListener<List<Event>> listener) {
+        database = FirebaseDatabase.getInstance();
+        DatabaseReference myRef = database.getReference();
+
+        myRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
 
-                for (DataSnapshot childSnapshot : dataSnapshot.getChildren()) {
+                for (DataSnapshot childSnapshot:dataSnapshot.getChildren()) {
                     Event event = childSnapshot.getValue(Event.class);
                     eventList.add(event);
                 }
+
+
                 listener.finish(eventList);
             }
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
-
             }
         });
+
+
+    }
+
+
+    public void addEventToDatabase(Event event){
+
+        database = FirebaseDatabase.getInstance();
+        DatabaseReference myRef = database.getReference();
+        myRef.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("eventList").child(event.getEventName()).setValue(event);
     }
 
 }
+
+
+//
+//    private void removeFavToFirebase(News news){
+//        FirebaseDatabase database = FirebaseDatabase.getInstance();
+//        DatabaseReference myRef = database.getReference();
+//        myRef.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("newsFavoritas").child(news.getPublishedAt()).removeValue();
+//    }
+//        event.addListenerForSingleValueEvent(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(DataSnapshot dataSnapshot) {
+//
+//                for (DataSnapshot childSnapshot : dataSnapshot.getChildren()) {
+//                    Event event = childSnapshot.getValue(Event.class);
+//                    eventList.add(event);
+//                }
+//                listener.finish(eventList);
+//            }
+//
+//            @Override
+//            public void onCancelled(DatabaseError databaseError) {
+//
+//            }
+//        });

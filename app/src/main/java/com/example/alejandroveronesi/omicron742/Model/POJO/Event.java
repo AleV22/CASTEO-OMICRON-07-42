@@ -11,13 +11,21 @@ public class Event {
     private String position;
 
 
+
     //constructor
+    public Event() {
+
+    }
+
     public Event(String eventName, Integer eventTime, Integer phone, String contact) {
         this.eventName = eventName;
         this.eventTime = eventTime;
         this.phone = phone;
         this.contact = contact;
     }
+
+
+
 
     //getters, setters
     public String getEventName() {

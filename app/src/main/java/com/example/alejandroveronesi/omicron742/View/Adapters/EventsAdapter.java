@@ -33,7 +33,7 @@ public class EventsAdapter extends RecyclerView.Adapter implements View.OnClickL
         this.myListener = myListener;
     }
 
-    public void setTracksList(List<Event> eventsList) {
+    public void setEventsList(List<Event> eventsList) {
         this.eventsList = eventsList;
         notifyDataSetChanged();
     }
@@ -93,9 +93,11 @@ public class EventsAdapter extends RecyclerView.Adapter implements View.OnClickL
 
         public void loadData(Event event) {
 
-            eventName.setText(event.getEventName());
-            eventTime.setText(event.getEventTime().toString());
+//            Integer minutes = event.getEventTime() / 60000;
             contact.setText(event.getContact());
+            eventName.setText(event.getEventName());
+//            eventTime.setText(event.getEventTime().intValue());
+
 
         }
     }

@@ -16,6 +16,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.alejandroveronesi.omicron742.Controller.Controller;
 import com.example.alejandroveronesi.omicron742.Model.POJO.Event;
 import com.example.alejandroveronesi.omicron742.R;
 import com.google.firebase.database.DataSnapshot;
@@ -40,7 +41,7 @@ public class FragmentEvent extends Fragment implements AdapterView.OnItemSelecte
     private EditText eventInput;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(LayoutInflater inflater, final ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view =  inflater.inflate(R.layout.fragment_event, container, false);
@@ -92,10 +93,10 @@ public class FragmentEvent extends Fragment implements AdapterView.OnItemSelecte
         createEventButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-
                 String eventName = eventInput.getText().toString();
                 Event createdEvent = new Event(eventName, timeSelected, phoneSelected, contactSelected);
+                Controller controller = new Controller();
+                controller.agregador(createdEvent);
                 Toast.makeText(getContext(), "evento: " + eventName + timeSelected + contactSelected, Toast.LENGTH_SHORT).show();
 
 

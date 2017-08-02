@@ -4,18 +4,17 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.alejandroveronesi.omicron742.Controller.Controller;
 import com.example.alejandroveronesi.omicron742.Model.POJO.Event;
 import com.example.alejandroveronesi.omicron742.R;
-import com.example.alejandroveronesi.omicron742.View.Activities.MainActivity;
 import com.example.alejandroveronesi.omicron742.View.Adapters.EventsAdapter;
+import com.example.alejandroveronesi.omicron742.util.ResultListener;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -42,12 +41,27 @@ public class FragmentEventManager extends Fragment {
 
         recyclerView.setAdapter(eventsAdapter);
 
-        eventsList.add(new Event("Llegada deposito A",50000, 44445555, "Seguridad 1"));
-        eventsList.add(new Event("Llegada a casa",112000, 44445555, "Casa"));
-        eventsList.add(new Event("Llegada al trabajo",12000, 44445555, "Recepcion"));
-        eventsList.add(new Event("Llegada a la quinta",20000, 44445555, "Casa"));
-        eventsList.add(new Event("Llegada al bunker",7000, 44445555, "Control"));
-        eventsList.add(new Event("Llegada al banco",13000, 44445555, "Blindados"));
+
+        //the list:
+        Controller controller = new Controller();
+        controller.getEventList(new ResultListener<List<Event>>() {
+            @Override
+            public void finish(List<Event> resultado) {
+                eventsAdapter.setEventsList(resultado);
+                eventsAdapter.notifyDataSetChanged();
+            }
+        });
+
+//        eventsList.add(new Event("Llegada deposito A",300000, 44445555, "Seguridad 1"));
+//        eventsList.add(new Event("Llegada a casa",600000, 44445555, "Casa"));
+//        eventsList.add(new Event("Llegada al trabajo",120000, 44445555, "Recepcion"));
+//        eventsList.add(new Event("Llegada a la quinta",900000, 44445555, "Casa"));
+//        eventsList.add(new Event("Llegada al bunker",600000, 44445555, "Control"));
+//        eventsList.add(new Event("Llegada al banco",300000, 44445555, "Blindados"));
+
+
+
+
 
         View.OnClickListener listener = new View.OnClickListener() {
             @Override
