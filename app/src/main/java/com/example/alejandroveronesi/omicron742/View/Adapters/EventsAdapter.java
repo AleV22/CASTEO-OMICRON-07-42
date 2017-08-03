@@ -93,10 +93,10 @@ public class EventsAdapter extends RecyclerView.Adapter implements View.OnClickL
 
         public void loadData(Event event) {
 
-//            Integer minutes = event.getEventTime() / 60000;
+//            Integer minutes = (Integer) event.getEventTime() / 60000;
             contact.setText(event.getContact());
             eventName.setText(event.getEventName());
-//            eventTime.setText(event.getEventTime().intValue());
+            eventTime.setText(event.getEventTime().toString());
 
 
         }
