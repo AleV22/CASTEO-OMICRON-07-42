@@ -34,18 +34,22 @@ public class FragmentStartEvent extends Fragment {
         Bundle bundle = getArguments();
 
         String name = bundle.getString(EVENT_NAME);
-        final Integer time = bundle.getInt(EVENT_TIME);
+        final Integer time = bundle.getInt(EVENT_TIME)*60000;
         String email = bundle.getString(EVENT_EMAIL);
         Integer phone = bundle.getInt(EVENT_PHONE);
 
-        TextView nameEvent = (TextView) view.findViewById(R.id.nameEventTextView);
-        TextView emailEvent = (TextView) view.findViewById(R.id.emailEventTextView);
-        TextView phoneEvent = (TextView) view.findViewById(R.id.phoneEventTextView);
-        final TextView timeEvent = (TextView) view.findViewById(R.id.timerTextView);
+        TextView nameEvent =  view.findViewById(R.id.nameEventTextView);
+        TextView emailEvent =  view.findViewById(R.id.emailEventTextView);
+        TextView phoneEvent =  view.findViewById(R.id.phoneEventTextView);
+        final TextView timeEvent = view.findViewById(R.id.timerTextView);
 
         nameEvent.setText(name);
         emailEvent.setText(email);
         phoneEvent.setText(phone.toString());
+        timeEvent.setText(String.format("%d min, %d sec",
+                TimeUnit.MILLISECONDS.toMinutes( time),
+                TimeUnit.MILLISECONDS.toSeconds(time) -
+                        TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(time))));
 
 
         buttonStart = (Button) view.findViewById(R.id.startButton);
