@@ -1,11 +1,18 @@
 package com.example.alejandroveronesi.omicron742.View.Activities;
 
 import android.content.Intent;
+import android.support.annotation.NonNull;
+import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 
 import com.example.alejandroveronesi.omicron742.Model.POJO.Event;
 import com.example.alejandroveronesi.omicron742.R;
@@ -15,16 +22,55 @@ import com.example.alejandroveronesi.omicron742.View.Fragments.FragmentStartEven
 
 public class MainActivity extends AppCompatActivity implements FragmentEventManager.NotifyActivities {
 
+
+    private Toolbar toolbar;
+    private ActionBar actionBar;
+    private DrawerLayout drawerLayout;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        actionBar = getSupportActionBar();
+        actionBar.setDisplayShowTitleEnabled(false);
+        actionBar.setDisplayHomeAsUpEnabled(false);
+        actionBar.setDisplayShowHomeEnabled(false);
+
+        toolbar.setTitle("My Restorapp");
+
+        drawerLayout = (DrawerLayout) findViewById(R.id.drawer1);
+
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+                this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        drawerLayout.addDrawerListener(toggle);
+        toggle.syncState();
+
+        final NavigationView navigationView = (NavigationView) findViewById(R.id.navigation1);
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.usuario:
+
+                        break;
+                    case R.id.carta:
+                        break;
+
+                }
+                drawerLayout.closeDrawers();
+                return false;
+            }
+        });
+
 
         FragmentEventManager fragmentEventManager = new FragmentEventManager();
         traveler(fragmentEventManager);
-//        FragmentStartEvent fragmentStartEvent = new FragmentStartEvent();
-//        traveler(fragmentStartEvent);
+
+
 
     }
 
