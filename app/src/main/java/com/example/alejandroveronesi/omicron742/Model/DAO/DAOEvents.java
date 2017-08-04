@@ -3,10 +3,12 @@ package com.example.alejandroveronesi.omicron742.Model.DAO;
 
 import android.content.Context;
 import android.preference.PreferenceManager;
+import android.widget.Toast;
 
 import com.example.alejandroveronesi.omicron742.Model.POJO.Event;
 import com.example.alejandroveronesi.omicron742.util.ResultListener;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -20,25 +22,33 @@ public class DAOEvents {
 
     private List<Event> eventList = new ArrayList<>();
     public FirebaseDatabase database;
+    private FirebaseAuth mAuth = FirebaseAuth.getInstance();
+    private FirebaseUser user = mAuth.getCurrentUser();
+
+
 
     public void obtainEventsFromDatabase(final ResultListener<List<Event>> listener) {
-        database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReferenceFromUrl("https://fir-omicron742.firebaseio.com/"+ FirebaseAuth.getInstance().getCurrentUser().getUid() +  "/eventList");
 
-        myRef.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
+        if (user != null) {
+            database = FirebaseDatabase.getInstance();
+            DatabaseReference myRef = database.getReferenceFromUrl("https://fir-omicron742.firebaseio.com/" + user.getUid() + "/eventList");
 
-                for (DataSnapshot childSnapshot:dataSnapshot.getChildren()) {
-                    Event event = childSnapshot.getValue(Event.class);
-                    eventList.add(event);
+            myRef.addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+
+                    for (DataSnapshot childSnapshot : dataSnapshot.getChildren()) {
+                        Event event = childSnapshot.getValue(Event.class);
+                        eventList.add(event);
+                    }
+                    listener.finish(eventList);
                 }
-                listener.finish(eventList);
-            }
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-            }
-        });
+
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
+                }
+            });
+        }
     }
 
 
