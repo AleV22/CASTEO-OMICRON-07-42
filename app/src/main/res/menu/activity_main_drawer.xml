@@ -6,8 +6,8 @@
             android:title="Usuario"
             android:checkable="true"/>
         <item
-            android:id="@+id/carta"
-            android:title="Carta"
+            android:id="@+id/logOut"
+            android:title="Log Out"
             android:checkable="true"/>
 
 

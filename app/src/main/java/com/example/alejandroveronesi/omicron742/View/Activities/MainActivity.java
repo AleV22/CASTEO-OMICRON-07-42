@@ -19,6 +19,8 @@ import com.example.alejandroveronesi.omicron742.R;
 import com.example.alejandroveronesi.omicron742.View.Fragments.FragmentEvent;
 import com.example.alejandroveronesi.omicron742.View.Fragments.FragmentEventManager;
 import com.example.alejandroveronesi.omicron742.View.Fragments.FragmentStartEvent;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity implements FragmentEventManager.NotifyActivities {
 
@@ -26,7 +28,7 @@ public class MainActivity extends AppCompatActivity implements FragmentEventMana
     private Toolbar toolbar;
     private ActionBar actionBar;
     private DrawerLayout drawerLayout;
-
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,7 +59,8 @@ public class MainActivity extends AppCompatActivity implements FragmentEventMana
                     case R.id.usuario:
 
                         break;
-                    case R.id.carta:
+                    case R.id.logOut:
+                        signOut();
                         break;
 
                 }
@@ -110,6 +113,24 @@ public class MainActivity extends AppCompatActivity implements FragmentEventMana
             fragmentTransaction.addToBackStack(null);
         }
         fragmentTransaction.commit();
+    }
+
+    public void onStart() {
+        super.onStart();
+        mAuth = FirebaseAuth.getInstance();
+    }
+
+    private void goToLoginActivity() {
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+        finish();
+    }
+
+    //des loggear
+    public void signOut() {
+        // Firebase sign out
+        mAuth.getInstance().signOut();
+        goToLoginActivity();
     }
 
 }
