@@ -41,7 +41,6 @@ public class FragmentEventManager extends Fragment {
 
         recyclerView.setAdapter(eventsAdapter);
 
-
         //the list:
         Controller controller = new Controller();
         controller.getEventList(new ResultListener<List<Event>>() {
@@ -51,17 +50,6 @@ public class FragmentEventManager extends Fragment {
                 eventsAdapter.notifyDataSetChanged();
             }
         });
-
-//        eventsList.add(new Event("Llegada deposito A",300000, 44445555, "Seguridad 1"));
-//        eventsList.add(new Event("Llegada a casa",600000, 44445555, "Casa"));
-//        eventsList.add(new Event("Llegada al trabajo",120000, 44445555, "Recepcion"));
-//        eventsList.add(new Event("Llegada a la quinta",900000, 44445555, "Casa"));
-//        eventsList.add(new Event("Llegada al bunker",600000, 44445555, "Control"));
-//        eventsList.add(new Event("Llegada al banco",300000, 44445555, "Blindados"));
-
-
-
-
 
         View.OnClickListener listener = new View.OnClickListener() {
             @Override
@@ -85,7 +73,6 @@ public class FragmentEventManager extends Fragment {
         return view;
     }
 
-
     public interface NotifyActivities {
         public void receiveMessaje(Event event);
         public void newEventPage();
@@ -97,6 +84,4 @@ public class FragmentEventManager extends Fragment {
         super.onAttach(context);
         this.notifyActivities = (NotifyActivities) context;
     }
-
-
 }

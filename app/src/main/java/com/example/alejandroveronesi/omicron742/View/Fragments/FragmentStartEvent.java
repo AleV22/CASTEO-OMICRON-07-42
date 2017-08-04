@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.example.alejandroveronesi.omicron742.R;
 
+import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
 
@@ -46,20 +47,20 @@ public class FragmentStartEvent extends Fragment {
         nameEvent.setText(name);
         emailEvent.setText(email);
         phoneEvent.setText(phone.toString());
-        timeEvent.setText(String.format("%d min, %d sec",
+        timeEvent.setText(String.format(Locale.getDefault(),"%d min, %d sec",
                 TimeUnit.MILLISECONDS.toMinutes( time),
                 TimeUnit.MILLISECONDS.toSeconds(time) -
                         TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(time))));
 
 
-        buttonStart = (Button) view.findViewById(R.id.startButton);
+        buttonStart = view.findViewById(R.id.startButton);
         buttonStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 new CountDownTimer(time, 1000) { // adjust the milli seconds here
 
                     public void onTick(long millisUntilFinished) {
-                        timeEvent.setText(""+String.format("%d min, %d sec",
+                        timeEvent.setText(String.format(Locale.getDefault(),"%d min, %d sec",
                                 TimeUnit.MILLISECONDS.toMinutes( millisUntilFinished),
                                 TimeUnit.MILLISECONDS.toSeconds(millisUntilFinished) -
                                         TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(millisUntilFinished))));

@@ -11,8 +11,6 @@ import java.util.List;
 
 public class Controller {
 
-
-
     public void getEventList(final ResultListener<List<Event>> viewListener){
         DAOEvents daoEvents = new DAOEvents();
         daoEvents.obtainEventsFromDatabase(new ResultListener<List<Event>>() {

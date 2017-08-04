@@ -33,7 +33,6 @@ import static com.example.alejandroveronesi.omicron742.R.id.parent;
 
 public class FragmentEvent extends Fragment implements AdapterView.OnItemSelectedListener {
 
-
     private Button createEventButton;
     private Integer timeSelected;
     private Integer phoneSelected;
@@ -45,8 +44,6 @@ public class FragmentEvent extends Fragment implements AdapterView.OnItemSelecte
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view =  inflater.inflate(R.layout.fragment_event, container, false);
-
-
 
         //Number picker selector:
         final TextView tv = (TextView) view.findViewById(R.id.tv);
@@ -69,9 +66,6 @@ public class FragmentEvent extends Fragment implements AdapterView.OnItemSelecte
             }
         });
 
-
-
-
         //Spinner for the contact selection:
         Spinner spinner = (Spinner) view.findViewById(R.id.menuContactos);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getContext(),R.array.planets_array, android.R.layout.simple_spinner_item);
@@ -80,10 +74,6 @@ public class FragmentEvent extends Fragment implements AdapterView.OnItemSelecte
         // Apply the adapter to the spinner
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(this);
-
-
-
-
 
         //action for createEvent button
         createEventButton = view.findViewById(R.id.createEventButton);
@@ -98,8 +88,6 @@ public class FragmentEvent extends Fragment implements AdapterView.OnItemSelecte
                 Controller controller = new Controller();
                 controller.agregador(createdEvent);
                 Toast.makeText(getContext(), "evento: " + eventName + timeSelected + contactSelected, Toast.LENGTH_SHORT).show();
-
-
             }
         });
 

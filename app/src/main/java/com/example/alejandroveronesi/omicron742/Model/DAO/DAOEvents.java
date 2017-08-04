@@ -21,8 +21,6 @@ public class DAOEvents {
     private List<Event> eventList = new ArrayList<>();
     public FirebaseDatabase database;
 
-
-
     public void obtainEventsFromDatabase(final ResultListener<List<Event>> listener) {
         database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReferenceFromUrl("https://fir-omicron742.firebaseio.com/"+ FirebaseAuth.getInstance().getCurrentUser().getUid() +  "/eventList");
@@ -35,18 +33,12 @@ public class DAOEvents {
                     Event event = childSnapshot.getValue(Event.class);
                     eventList.add(event);
                 }
-
-
                 listener.finish(eventList);
             }
             @Override
             public void onCancelled(DatabaseError databaseError) {
             }
         });
-
-
-
-
     }
 
 
@@ -60,25 +52,3 @@ public class DAOEvents {
 }
 
 
-//
-//    private void removeFavToFirebase(News news){
-//        FirebaseDatabase database = FirebaseDatabase.getInstance();
-//        DatabaseReference myRef = database.getReference();
-//        myRef.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("newsFavoritas").child(news.getPublishedAt()).removeValue();
-//    }
-//        event.addListenerForSingleValueEvent(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(DataSnapshot dataSnapshot) {
-//
-//                for (DataSnapshot childSnapshot : dataSnapshot.getChildren()) {
-//                    Event event = childSnapshot.getValue(Event.class);
-//                    eventList.add(event);
-//                }
-//                listener.finish(eventList);
-//            }
-//
-//            @Override
-//            public void onCancelled(DatabaseError databaseError) {
-//
-//            }
-//        });
