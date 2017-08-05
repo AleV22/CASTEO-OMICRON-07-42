@@ -1,6 +1,5 @@
 package com.example.alejandroveronesi.omicron742.Model.DAO;
 
-
 import android.content.Context;
 import android.preference.PreferenceManager;
 import android.widget.Toast;
@@ -24,8 +23,6 @@ public class DAOEvents {
     public FirebaseDatabase database;
     private FirebaseAuth mAuth = FirebaseAuth.getInstance();
     private FirebaseUser user = mAuth.getCurrentUser();
-
-
 
     public void obtainEventsFromDatabase(final ResultListener<List<Event>> listener) {
 

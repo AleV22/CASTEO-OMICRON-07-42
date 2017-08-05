@@ -22,7 +22,6 @@ public class EventsAdapter extends RecyclerView.Adapter implements View.OnClickL
     private Context context;
     private View.OnClickListener myListener;
 
-
     //Constructor
     public EventsAdapter(List<Event> eventsList, Context context) {
         this.eventsList = eventsList;
@@ -74,31 +73,23 @@ public class EventsAdapter extends RecyclerView.Adapter implements View.OnClickL
             myListener.onClick(v);
         }
     }
-
     //ViewHolder
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         private TextView eventName;
         private TextView eventTime;
         private TextView contact;
-
         public ViewHolder(View itemView) {
             super(itemView);
-
             eventName = itemView.findViewById(R.id.textViewName);
             eventTime = itemView.findViewById(R.id.textViewTime);
             contact = itemView.findViewById(R.id.textViewContact);
-
         }
-
         public void loadData(Event event) {
-
 //            Integer minutes = (Integer) event.getEventTime() / 60000;
             contact.setText(event.getContact());
             eventName.setText(event.getEventName());
             eventTime.setText(event.getEventTime().toString());
-
-
         }
     }
 }

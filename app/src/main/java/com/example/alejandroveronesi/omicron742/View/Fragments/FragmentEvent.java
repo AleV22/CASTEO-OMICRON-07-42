@@ -1,6 +1,7 @@
 package com.example.alejandroveronesi.omicron742.View.Fragments;
 
 
+import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -38,6 +39,7 @@ public class FragmentEvent extends Fragment implements AdapterView.OnItemSelecte
     private Integer phoneSelected;
     private String contactSelected;
     private EditText eventInput;
+    private NotifyActivities2 notifyActivities2;
 
     @Override
     public View onCreateView(LayoutInflater inflater, final ViewGroup container,
@@ -87,6 +89,7 @@ public class FragmentEvent extends Fragment implements AdapterView.OnItemSelecte
                 Event createdEvent = new Event(eventName, timeSelected, phoneSelected, contactSelected);
                 Controller controller = new Controller();
                 controller.agregador(createdEvent);
+                notifyActivities2.receiveMessaje2();
                 Toast.makeText(getContext(), "evento: " + eventName + timeSelected + contactSelected, Toast.LENGTH_SHORT).show();
             }
         });
@@ -102,6 +105,17 @@ public class FragmentEvent extends Fragment implements AdapterView.OnItemSelecte
 
     public void onNothingSelected(AdapterView<?> parent) {
         // Another interface callback
+    }
+
+
+    public interface NotifyActivities2 {
+        public void receiveMessaje2();
+    }
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        this.notifyActivities2 = (NotifyActivities2) context;
     }
 
 }

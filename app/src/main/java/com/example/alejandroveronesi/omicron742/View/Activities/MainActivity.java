@@ -22,7 +22,7 @@ import com.example.alejandroveronesi.omicron742.View.Fragments.FragmentStartEven
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class MainActivity extends AppCompatActivity implements FragmentEventManager.NotifyActivities {
+public class MainActivity extends AppCompatActivity implements FragmentEventManager.NotifyActivities, FragmentEvent.NotifyActivities2 {
 
 
     private Toolbar toolbar;
@@ -133,4 +133,9 @@ public class MainActivity extends AppCompatActivity implements FragmentEventMana
         goToLoginActivity();
     }
 
+    @Override
+    public void receiveMessaje2() {
+        FragmentEventManager fragmentEventManager = new FragmentEventManager();
+        pasarFragment(fragmentEventManager,false);
+    }
 }
