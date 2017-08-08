@@ -1,6 +1,7 @@
 package com.example.alejandroveronesi.omicron742.View.Activities;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
@@ -21,6 +22,10 @@ import com.example.alejandroveronesi.omicron742.View.Fragments.FragmentEventMana
 import com.example.alejandroveronesi.omicron742.View.Fragments.FragmentStartEvent;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.FirebaseDatabase;
+
+import static android.R.attr.phoneNumber;
+import static android.R.id.message;
 
 public class MainActivity extends AppCompatActivity implements FragmentEventManager.NotifyActivities, FragmentEvent.NotifyActivities2 {
 
@@ -29,11 +34,16 @@ public class MainActivity extends AppCompatActivity implements FragmentEventMana
     private ActionBar actionBar;
     private DrawerLayout drawerLayout;
     private FirebaseAuth mAuth;
+    private static FirebaseDatabase mDatabase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mDatabase = FirebaseDatabase.getInstance();
+        mDatabase.setPersistenceEnabled(true);
+
+
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -42,7 +52,7 @@ public class MainActivity extends AppCompatActivity implements FragmentEventMana
         actionBar.setDisplayHomeAsUpEnabled(false);
         actionBar.setDisplayShowHomeEnabled(false);
 
-        toolbar.setTitle("My Restorapp");
+        toolbar.setTitle("OMICRONKING");
 
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer1);
 
@@ -130,6 +140,7 @@ public class MainActivity extends AppCompatActivity implements FragmentEventMana
     public void signOut() {
         // Firebase sign out
         mAuth.getInstance().signOut();
+//        sendSMS();
         goToLoginActivity();
     }
 
@@ -138,4 +149,12 @@ public class MainActivity extends AppCompatActivity implements FragmentEventMana
         FragmentEventManager fragmentEventManager = new FragmentEventManager();
         pasarFragment(fragmentEventManager,false);
     }
+
+//    private void sendSMS(){
+//        Intent intentSMS = new Intent(Intent.ACTION_VIEW, Uri.parse("sms:" + phoneNumber));
+//        intentSMS.putExtra("sms_body", message);
+//        startActivity(intentSMS);
+//
+//    }
+
 }
