@@ -2,7 +2,11 @@ package com.example.alejandroveronesi.omicron742.View.Fragments;
 
 
 import android.app.PendingIntent;
+import android.content.Context;
 import android.content.Intent;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -23,7 +27,7 @@ import java.util.concurrent.TimeUnit;
 import static android.R.attr.phoneNumber;
 
 
-public class FragmentStartEvent extends Fragment {
+public class FragmentStartEvent extends Fragment implements LocationListener {
 
     public static final String EVENT_NAME = "name";
     public static final String EVENT_TIME = "time";
@@ -31,6 +35,9 @@ public class FragmentStartEvent extends Fragment {
     public static final String EVENT_PHONE = "phone";
 
     private Button buttonStart;
+    private LocationManager locationManager;
+    private Context context;
+    private Location actualLocation;
 
 
     @Override
@@ -67,28 +74,70 @@ public class FragmentStartEvent extends Fragment {
                 new CountDownTimer(time, 1000) { // adjust the milli seconds here
 
                     public void onTick(long millisUntilFinished) {
-                        timeEvent.setText(String.format(Locale.getDefault(),"%d min, %d sec",
-                                TimeUnit.MILLISECONDS.toMinutes( millisUntilFinished),
+                        timeEvent.setText(String.format(Locale.getDefault(), "%d min, %d sec",
+                                TimeUnit.MILLISECONDS.toMinutes(millisUntilFinished),
                                 TimeUnit.MILLISECONDS.toSeconds(millisUntilFinished) -
                                         TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(millisUntilFinished))));
                     }
-
                     public void onFinish() {
                         timeEvent.setText("done!");
-
                         //este funciono, esta probado
 //                        sendSms("+5491132870691", "auxilio", true);
 
-                        SmsManager smsManager = SmsManager.getDefault();
-                        smsManager.sendTextMessage("+5491132870691", null, "Auxilio", null, null);
+                        //este es el que funciona y se usa
+//                        SmsManager smsManager = SmsManager.getDefault();
+//                        smsManager.sendTextMessage("+5491132870691", null, "Auxilio", null, null);
+
+                        actualLocation.getLatitude();
+                        sendLocationSMS("+5491132870691",actualLocation);
+
                     }
-
                 }.start();
-
             }
         });
-        
         return view;
+    }
+
+    public void sendLocationSMS(String phoneNumber, Location currentLocation) {
+        SmsManager smsManager = SmsManager.getDefault();
+        StringBuffer smsBody = new StringBuffer();
+        smsBody.append("http://maps.google.com?q=");
+        smsBody.append(currentLocation.getLatitude());
+        smsBody.append(",");
+        //smsBody.append(currentLocation.getLongitude());
+        smsManager.sendTextMessage(phoneNumber, null, smsBody.toString(), null, null);
+    }
+
+    public void getLocation() {
+        try {
+            locationManager = (LocationManager) getContext().getSystemService(Context.LOCATION_SERVICE);
+            locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 5, this);
+        }
+        catch(SecurityException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+
+    @Override
+    public void onLocationChanged(Location location) {
+        actualLocation = location;
+    }
+
+    @Override
+    public void onStatusChanged(String s, int i, Bundle bundle) {
+
+    }
+
+    @Override
+    public void onProviderEnabled(String s) {
+
+    }
+
+    @Override
+    public void onProviderDisabled(String s) {
+
     }
 
 
