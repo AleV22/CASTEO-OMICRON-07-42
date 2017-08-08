@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements FragmentEventMana
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mDatabase = FirebaseDatabase.getInstance();
-        mDatabase.setPersistenceEnabled(true);
+//        mDatabase.setPersistenceEnabled(true);
 
 
 
@@ -150,11 +150,11 @@ public class MainActivity extends AppCompatActivity implements FragmentEventMana
         pasarFragment(fragmentEventManager,false);
     }
 
-//    private void sendSMS(){
-//        Intent intentSMS = new Intent(Intent.ACTION_VIEW, Uri.parse("sms:" + phoneNumber));
-//        intentSMS.putExtra("sms_body", message);
-//        startActivity(intentSMS);
-//
-//    }
+    private void sendSMS(){
+        Intent intentSMS = new Intent(Intent.ACTION_VIEW, Uri.parse("sms:" + phoneNumber));
+        intentSMS.putExtra("sms_body", message);
+        startActivity(intentSMS);
+
+    }
 
 }

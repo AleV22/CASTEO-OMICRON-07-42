@@ -1,9 +1,13 @@
 package com.example.alejandroveronesi.omicron742.View.Fragments;
 
 
+import android.app.PendingIntent;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.v4.app.Fragment;
+import android.telephony.SmsManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,8 +16,11 @@ import android.widget.TextView;
 
 import com.example.alejandroveronesi.omicron742.R;
 
+import java.util.ArrayList;
 import java.util.Locale;
 import java.util.concurrent.TimeUnit;
+
+import static android.R.attr.phoneNumber;
 
 
 public class FragmentStartEvent extends Fragment {
@@ -68,7 +75,12 @@ public class FragmentStartEvent extends Fragment {
 
                     public void onFinish() {
                         timeEvent.setText("done!");
+                        sendSms("+5491132870691", "auxilio", true);
+//                        sendSMS();
+//                        SmsManager smsManager = SmsManager.getDefault();
+//                        smsManager.sendTextMessage("+5491132870691", null, "Auxilio", null, null);
                     }
+
                 }.start();
 
             }
@@ -77,4 +89,45 @@ public class FragmentStartEvent extends Fragment {
         return view;
     }
 
+    public void sendSMS() {
+        String number = "+5491132870691";
+        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("sms"+ number)));
+    }
+
+    private void sendSms(String number,String message, boolean isBinary)
+    {
+        SmsManager manager = SmsManager.getDefault();
+
+
+        String SMS_SENT = "SMS_SENT";
+        String SMS_DELIVERED = "SMS_DELIVERED";
+
+        PendingIntent piSend = PendingIntent.getBroadcast(getContext(), 0, new Intent(SMS_SENT), 0);
+        PendingIntent piDelivered = PendingIntent.getBroadcast(getContext(), 0, new Intent(SMS_DELIVERED), 0);
+
+        if(isBinary)
+        {
+            byte[] data = new byte[message.length()];
+
+            for(int index=0; index<message.length() && index < 100; ++index)
+            {
+                data[index] = (byte)message.charAt(index);
+            }
+            manager.sendDataMessage(number, null, (short) 8901, data,piSend, piDelivered);
+        }
+        else
+        {
+            int length = message.length();
+
+            if(length > 100)
+            {
+                ArrayList<String> messagelist = manager.divideMessage(message);
+                manager.sendMultipartTextMessage(number, null, messagelist, null, null);
+            }
+            else
+            {
+                manager.sendTextMessage(number, null, message, piSend, piDelivered);
+            }
+        }
+    }
 }
