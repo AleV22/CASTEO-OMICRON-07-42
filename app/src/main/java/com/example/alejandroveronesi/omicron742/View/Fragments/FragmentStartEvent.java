@@ -18,8 +18,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.alejandroveronesi.omicron742.R;
+import com.google.android.gms.vision.text.Text;
 
 import java.util.ArrayList;
 import java.util.Locale;
@@ -38,6 +40,9 @@ public class FragmentStartEvent extends Fragment implements LocationListener {
     private Button buttonStart;
     private Context context;
     private Location currentLocation;
+    private LocationManager locationManager;
+    private TextView currentLocationTV;
+    private Button btnLocation;
 
 
     @Override
@@ -46,7 +51,7 @@ public class FragmentStartEvent extends Fragment implements LocationListener {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_start_event, container, false);
 
-        currentLocation = new Location("http://maps.google.com?q=");
+        //currentLocation = new Location("http://maps.google.com?q=");
 
 
         Bundle bundle = getArguments();
@@ -69,12 +74,16 @@ public class FragmentStartEvent extends Fragment implements LocationListener {
                 TimeUnit.MILLISECONDS.toSeconds(time) -
                         TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(time))));
 
+        currentLocationTV = (TextView) view.findViewById(R.id.textViewPosition);
+        btnLocation = view.findViewById(R.id.btnLocation);
+        btnLocation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getLocation();
+            }
+        });
 
         buttonStart = view.findViewById(R.id.startButton);
-        LocationManager locationManager = (LocationManager) getActivity().getSystemService(Context.LOCATION_SERVICE);
-        Criteria criteria = new Criteria();
-        provider = locationManager.getBestProvider(criteria, false);
-        locationManager.getLastKnownLocation(provider);
         buttonStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -111,7 +120,7 @@ public class FragmentStartEvent extends Fragment implements LocationListener {
         smsBody.append("http://maps.google.com?q=");
         smsBody.append(currentLocation.getLatitude());
         smsBody.append(",");
-        //smsBody.append(currentLocation.getLongitude());
+        smsBody.append(currentLocation.getLongitude());
         smsManager.sendTextMessage(phoneNumber, null, smsBody.toString(), null, null);
     }
 //
@@ -129,19 +138,17 @@ public class FragmentStartEvent extends Fragment implements LocationListener {
     void getLocation() {
         try {
             locationManager = (LocationManager) getContext().getSystemService(Context.LOCATION_SERVICE);
-            locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 5, this);
+            locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 60000000, 0, this);
         }
         catch(SecurityException e) {
             e.printStackTrace();
         }
     }
 
-
-
-
     @Override
     public void onLocationChanged(Location location) {
-
+                currentLocationTV.setText("Current Location: " + location.getLatitude() + ", " + location.getLongitude());
+                sendLocationSMS("+5491132870691", location);
     }
 
     @Override
