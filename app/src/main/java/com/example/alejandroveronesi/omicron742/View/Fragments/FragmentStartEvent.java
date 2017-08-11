@@ -8,6 +8,7 @@ import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
+import android.location.LocationProvider;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -30,7 +31,7 @@ import java.util.concurrent.TimeUnit;
 import static android.R.attr.phoneNumber;
 
 
-public class FragmentStartEvent extends Fragment implements LocationListener {
+public class FragmentStartEvent extends Fragment {
 
     public static final String EVENT_NAME = "name";
     public static final String EVENT_TIME = "time";
@@ -43,7 +44,8 @@ public class FragmentStartEvent extends Fragment implements LocationListener {
     private LocationManager locationManager;
     private TextView currentLocationTV;
     private Button btnLocation;
-
+    Double latitud;
+    Double longitud;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -52,7 +54,6 @@ public class FragmentStartEvent extends Fragment implements LocationListener {
         View view = inflater.inflate(R.layout.fragment_start_event, container, false);
 
         //currentLocation = new Location("http://maps.google.com?q=");
-
 
         Bundle bundle = getArguments();
 
@@ -87,6 +88,7 @@ public class FragmentStartEvent extends Fragment implements LocationListener {
         buttonStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                getLocation();
                 new CountDownTimer(time, 1000) { // adjust the milli seconds here
 
                     public void onTick(long millisUntilFinished) {
@@ -94,6 +96,10 @@ public class FragmentStartEvent extends Fragment implements LocationListener {
                                 TimeUnit.MILLISECONDS.toMinutes(millisUntilFinished),
                                 TimeUnit.MILLISECONDS.toSeconds(millisUntilFinished) -
                                         TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(millisUntilFinished))));
+
+                        currentLocation = new Location("http://maps.google.com?q=");
+
+
                     }
                     public void onFinish() {
                         timeEvent.setText("done!");
@@ -104,8 +110,7 @@ public class FragmentStartEvent extends Fragment implements LocationListener {
 //                        SmsManager smsManager = SmsManager.getDefault();
 //                        smsManager.sendTextMessage("+5491132870691", null, "Auxilio", null, null);
 
-                        getLocation();
-                        sendLocationSMS("+5491132870691",currentLocation);
+                          sendLocationSMS("+5491132870691", currentLocation);
 
                     }
                 }.start();
@@ -115,12 +120,13 @@ public class FragmentStartEvent extends Fragment implements LocationListener {
     }
 
     public void sendLocationSMS(String phoneNumber, Location currentLocation) {
+
         SmsManager smsManager = SmsManager.getDefault();
         StringBuffer smsBody = new StringBuffer();
         smsBody.append("http://maps.google.com?q=");
-        smsBody.append(currentLocation.getLatitude());
+        smsBody.append(latitud);
         smsBody.append(",");
-        smsBody.append(currentLocation.getLongitude());
+        smsBody.append(longitud);
         smsManager.sendTextMessage(phoneNumber, null, smsBody.toString(), null, null);
     }
 //
@@ -134,37 +140,19 @@ public class FragmentStartEvent extends Fragment implements LocationListener {
 //        }
 //    }
 
-
     void getLocation() {
         try {
             locationManager = (LocationManager) getContext().getSystemService(Context.LOCATION_SERVICE);
-            locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 60000000, 0, this);
+            LocationListener locationListener = new LocationListener();
+            locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 60000000, 0, locationListener);
+
         }
         catch(SecurityException e) {
             e.printStackTrace();
         }
     }
 
-    @Override
-    public void onLocationChanged(Location location) {
-                currentLocationTV.setText("Current Location: " + location.getLatitude() + ", " + location.getLongitude());
-                sendLocationSMS("+5491132870691", location);
-    }
 
-    @Override
-    public void onStatusChanged(String s, int i, Bundle bundle) {
-
-    }
-
-    @Override
-    public void onProviderEnabled(String s) {
-
-    }
-
-    @Override
-    public void onProviderDisabled(String s) {
-
-    }
 
 
 //    private void sendSms(String number,String message, boolean isBinary)
@@ -202,4 +190,30 @@ public class FragmentStartEvent extends Fragment implements LocationListener {
 //            }
 //        }
 //    }
+
+    private class LocationListener implements android.location.LocationListener{
+
+        @Override
+        public void onLocationChanged(Location location) {
+            latitud = location.getLatitude();
+            longitud = location.getLongitude();
+
+            //ver tema de permisos para activar gps en los telefonos
+        }
+
+        @Override
+        public void onStatusChanged(String s, int i, Bundle bundle) {
+
+        }
+
+        @Override
+        public void onProviderEnabled(String s) {
+
+        }
+
+        @Override
+        public void onProviderDisabled(String s) {
+
+        }
+    }
 }
