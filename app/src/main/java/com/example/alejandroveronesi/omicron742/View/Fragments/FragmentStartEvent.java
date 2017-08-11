@@ -37,7 +37,7 @@ public class FragmentStartEvent extends Fragment implements LocationListener {
     private Button buttonStart;
     private LocationManager locationManager;
     private Context context;
-    private Location actualLocation;
+    private Location currentLocation;
 
 
     @Override
@@ -45,6 +45,9 @@ public class FragmentStartEvent extends Fragment implements LocationListener {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_start_event, container, false);
+
+        currentLocation = new Location("http://maps.google.com?q=");
+
 
         Bundle bundle = getArguments();
 
@@ -88,8 +91,8 @@ public class FragmentStartEvent extends Fragment implements LocationListener {
 //                        SmsManager smsManager = SmsManager.getDefault();
 //                        smsManager.sendTextMessage("+5491132870691", null, "Auxilio", null, null);
 
-                        actualLocation.getLatitude();
-                        sendLocationSMS("+5491132870691",actualLocation);
+                        getLocation();
+                        sendLocationSMS("+5491132870691",currentLocation);
 
                     }
                 }.start();
@@ -108,7 +111,8 @@ public class FragmentStartEvent extends Fragment implements LocationListener {
         smsManager.sendTextMessage(phoneNumber, null, smsBody.toString(), null, null);
     }
 
-    public void getLocation() {
+
+    void getLocation() {
         try {
             locationManager = (LocationManager) getContext().getSystemService(Context.LOCATION_SERVICE);
             locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 5, this);
@@ -120,9 +124,10 @@ public class FragmentStartEvent extends Fragment implements LocationListener {
 
 
 
+
     @Override
     public void onLocationChanged(Location location) {
-        actualLocation = location;
+
     }
 
     @Override
