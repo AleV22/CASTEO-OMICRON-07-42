@@ -4,6 +4,7 @@ package com.example.alejandroveronesi.omicron742.View.Fragments;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
@@ -35,9 +36,9 @@ public class FragmentStartEvent extends Fragment implements LocationListener {
     public static final String EVENT_PHONE = "phone";
 
     private Button buttonStart;
-    private LocationManager locationManager;
     private Context context;
     private Location actualLocation;
+    private String provider;
 
 
     @Override
@@ -68,6 +69,10 @@ public class FragmentStartEvent extends Fragment implements LocationListener {
 
 
         buttonStart = view.findViewById(R.id.startButton);
+        LocationManager locationManager = (LocationManager) getActivity().getSystemService(Context.LOCATION_SERVICE);
+        Criteria criteria = new Criteria();
+        provider = locationManager.getBestProvider(criteria, false);
+        locationManager.getLastKnownLocation(provider);
         buttonStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -88,7 +93,6 @@ public class FragmentStartEvent extends Fragment implements LocationListener {
 //                        SmsManager smsManager = SmsManager.getDefault();
 //                        smsManager.sendTextMessage("+5491132870691", null, "Auxilio", null, null);
 
-                        actualLocation.getLatitude();
                         sendLocationSMS("+5491132870691",actualLocation);
 
                     }
@@ -107,16 +111,16 @@ public class FragmentStartEvent extends Fragment implements LocationListener {
         //smsBody.append(currentLocation.getLongitude());
         smsManager.sendTextMessage(phoneNumber, null, smsBody.toString(), null, null);
     }
-
-    public void getLocation() {
-        try {
-            locationManager = (LocationManager) getContext().getSystemService(Context.LOCATION_SERVICE);
-            locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 5, this);
-        }
-        catch(SecurityException e) {
-            e.printStackTrace();
-        }
-    }
+//
+//    public void getLocation() {
+//        try {
+//            locationManager = (LocationManager) getContext().getSystemService(Context.LOCATION_SERVICE);
+//            locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 5, this);
+//        }
+//        catch(SecurityException e) {
+//            e.printStackTrace();
+//        }
+//    }
 
 
 
