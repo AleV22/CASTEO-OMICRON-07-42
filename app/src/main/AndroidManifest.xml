@@ -21,6 +21,7 @@
         android:name=".MyApplicationTwitter"
         android:theme="@style/AppTheme">
 
+
         <receiver
             android:name=".MyResultReceiverTwitter"
             android:exported="false">

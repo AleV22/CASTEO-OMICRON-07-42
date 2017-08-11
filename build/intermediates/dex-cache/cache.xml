@@ -3,11 +3,29 @@
 
     <item
         is-multidex="true"
+        jar="C:\Users\Usuario\.android\build-cache\0b7000e13b3b4759771e2b56592afd2668f4050c\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_50a2428349887e8a8c59e736d91707c7527aa2b6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_9e3decfd773f8a4a800bd53d5bd87837e4795f51\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.0"
-        sha1="b7041eebc27a5bdd3807ab4396b118c5593d1561">
+        sha1="376e6a0acf3b3c177f101ade198c76148ae61408">
         <dex dex="C:\Users\Usuario\Documents\local6\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_ad043be4923a998eab25ba51f5eb9a7e9dc40cae\classes.dex" />
     </item>
 

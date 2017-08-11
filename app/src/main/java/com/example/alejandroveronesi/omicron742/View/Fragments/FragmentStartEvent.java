@@ -99,7 +99,6 @@ public class FragmentStartEvent extends Fragment {
 
                         currentLocation = new Location("http://maps.google.com?q=");
 
-
                     }
                     public void onFinish() {
                         timeEvent.setText("done!");
