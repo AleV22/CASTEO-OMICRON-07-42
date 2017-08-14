@@ -3,6 +3,7 @@
 
     <item
         is-multidex="true"
+<<<<<<< Updated upstream
         jar="/Users/alejandroveronesi/.android/build-cache/d20b2d8f8dd17ebac33b5e82f2061a4b22c1428a/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -18,6 +19,14 @@
         revision="26.0.0"
         sha1="46d23cdc19155c5f0d47ece99ca1c421346c1509">
         <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/disklrucache-4.0.0-RC0_6f2cd930b2cf222ced85115e795e39fc28c11956/classes.dex" />
+=======
+        jar="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="5cf60d57a9bc3435c5d3eecefd79ab1b57818a4d">
+        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_85186f866035a87cffa3bcdf472dfdd222ecedfb/classes.dex" />
+>>>>>>> Stashed changes
     </item>
     <item
         is-multidex="true"
@@ -28,6 +37,7 @@
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
         <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_45b2d581efc0c24c876018261fe112b2484e5128/classes.dex" />
     </item>
+<<<<<<< Updated upstream
     <item
         is-multidex="true"
         jar="/Users/alejandroveronesi/.android/build-cache/2ad0fcbb7dc1592973a53d3fda76c9fed707e33b/output/jars/classes.jar"
@@ -829,5 +839,7 @@
         sha1="9b3e203eac3707863ea1ec73c5a558d0bccb7e05">
         <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3a5da4b28599977ceedcb91bdf0752519029d0a4/classes.dex" />
     </item>
+=======
+>>>>>>> Stashed changes
 
 </items>
