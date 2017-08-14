@@ -7,15 +7,13 @@
     android:orientation="vertical"
     tools:context="com.example.alejandroveronesi.omicron742.View.Activities.LoginActivity">
 
-    <com.twitter.sdk.android.core.identity.TwitterLoginButton
-        android:id="@+id/login_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
 
     <com.google.android.gms.common.SignInButton
         android:id="@+id/sign_in_button"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="280dp"
+        />
 
 </LinearLayout>

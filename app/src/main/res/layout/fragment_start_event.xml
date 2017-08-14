@@ -65,20 +65,25 @@
         />
 
     <TextView
+        android:id="@+id/textViewCoordenates"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Algo"
-        android:id="@+id/textViewPosition"
+        android:text="Coordenadas:"
+        android:layout_marginTop="20dp"
         android:layout_gravity="center"
-        android:layout_marginTop="70dp"
         />
 
     <Button
+        android:id="@+id/btnObtener"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Location"
-        android:id="@+id/btnLocation"
+        android:text="Obtener L y L"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
         />
+
+
 
 
 </LinearLayout>

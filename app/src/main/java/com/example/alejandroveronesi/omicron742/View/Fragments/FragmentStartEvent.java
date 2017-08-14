@@ -39,11 +39,10 @@ public class FragmentStartEvent extends Fragment {
     public static final String EVENT_PHONE = "phone";
 
     private Button buttonStart;
-    private Context context;
     private Location currentLocation;
     private LocationManager locationManager;
-    private TextView currentLocationTV;
-    private Button btnLocation;
+    private Button btnObtener;
+    private TextView tvCoordenates;
     Double latitud;
     Double longitud;
 
@@ -75,9 +74,9 @@ public class FragmentStartEvent extends Fragment {
                 TimeUnit.MILLISECONDS.toSeconds(time) -
                         TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(time))));
 
-        currentLocationTV = (TextView) view.findViewById(R.id.textViewPosition);
-        btnLocation = view.findViewById(R.id.btnLocation);
-        btnLocation.setOnClickListener(new View.OnClickListener() {
+        tvCoordenates = (TextView)view.findViewById(R.id.textViewCoordenates);
+        btnObtener = (Button)view.findViewById(R.id.btnObtener);
+        btnObtener.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 getLocation();
@@ -109,7 +108,8 @@ public class FragmentStartEvent extends Fragment {
 //                        SmsManager smsManager = SmsManager.getDefault();
 //                        smsManager.sendTextMessage("+5491132870691", null, "Auxilio", null, null);
 
-                          sendLocationSMS("+5491132870691", currentLocation);
+                          //sendLocationSMS("+5491132870691", currentLocation);
+                          Toast.makeText(getContext(),"Current Location:" + currentLocation, Toast.LENGTH_LONG).show();
 
                     }
                 }.start();
@@ -128,16 +128,7 @@ public class FragmentStartEvent extends Fragment {
         smsBody.append(longitud);
         smsManager.sendTextMessage(phoneNumber, null, smsBody.toString(), null, null);
     }
-//
-//    public void getLocation() {
-//        try {
-//            locationManager = (LocationManager) getContext().getSystemService(Context.LOCATION_SERVICE);
-//            locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 5, this);
-//        }
-//        catch(SecurityException e) {
-//            e.printStackTrace();
-//        }
-//    }
+
 
     void getLocation() {
         try {
@@ -153,51 +144,14 @@ public class FragmentStartEvent extends Fragment {
 
 
 
-
-//    private void sendSms(String number,String message, boolean isBinary)
-//    {
-//        SmsManager manager = SmsManager.getDefault();
-//
-//        String SMS_SENT = "SMS_SENT";
-//        String SMS_DELIVERED = "SMS_DELIVERED";
-//
-//        PendingIntent piSend = PendingIntent.getBroadcast(getContext(), 0, new Intent(SMS_SENT), 0);
-//        PendingIntent piDelivered = PendingIntent.getBroadcast(getContext(), 0, new Intent(SMS_DELIVERED), 0);
-//
-//        if(isBinary)
-//        {
-//            byte[] data = new byte[message.length()];
-//
-//            for(int index=0; index<message.length() && index < 100; ++index)
-//            {
-//                data[index] = (byte)message.charAt(index);
-//            }
-//            manager.sendDataMessage(number, null, (short) 8901, data,piSend, piDelivered);
-//        }
-//        else
-//        {
-//            int length = message.length();
-//
-//            if(length > 100)
-//            {
-//                ArrayList<String> messagelist = manager.divideMessage(message);
-//                manager.sendMultipartTextMessage(number, null, messagelist, null, null);
-//            }
-//            else
-//            {
-//                manager.sendTextMessage(number, null, message, piSend, piDelivered);
-//            }
-//        }
-//    }
-
     private class LocationListener implements android.location.LocationListener{
 
         @Override
         public void onLocationChanged(Location location) {
-            latitud = location.getLatitude();
-            longitud = location.getLongitude();
+            //latitud = location.getLatitude();
+            //longitud = location.getLongitude();
+            tvCoordenates.setText("Current Location:" + location.getLongitude() + location.getLatitude());
 
-            //ver tema de permisos para activar gps en los telefonos
         }
 
         @Override
