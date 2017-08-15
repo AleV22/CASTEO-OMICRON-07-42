@@ -31,7 +31,7 @@ import java.util.concurrent.TimeUnit;
 import static android.R.attr.phoneNumber;
 
 
-public class FragmentStartEvent extends Fragment {
+public class FragmentStartEvent extends Fragment implements LocationListener {
 
     public static final String EVENT_NAME = "name";
     public static final String EVENT_TIME = "time";
@@ -108,8 +108,8 @@ public class FragmentStartEvent extends Fragment {
 //                        SmsManager smsManager = SmsManager.getDefault();
 //                        smsManager.sendTextMessage("+5491132870691", null, "Auxilio", null, null);
 
-                          //sendLocationSMS("+5491132870691", currentLocation);
-                          Toast.makeText(getContext(),"Current Location:" + currentLocation, Toast.LENGTH_LONG).show();
+                          sendLocationSMS("+5491132870691", currentLocation);
+//                          Toast.makeText(getContext(),"Current Location:" + currentLocation, Toast.LENGTH_LONG).show();
 
                     }
                 }.start();
@@ -133,8 +133,8 @@ public class FragmentStartEvent extends Fragment {
     void getLocation() {
         try {
             locationManager = (LocationManager) getContext().getSystemService(Context.LOCATION_SERVICE);
-            LocationListener locationListener = new LocationListener();
-            locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 60000000, 0, locationListener);
+//            LocationListener locationListener = new LocationListener();
+            locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, this);
 
         }
         catch(SecurityException e) {
@@ -142,31 +142,50 @@ public class FragmentStartEvent extends Fragment {
         }
     }
 
+    @Override
+    public void onLocationChanged(Location location) {
+        longitud = location.getLongitude();
+        latitud = location.getLatitude();
 
-
-    private class LocationListener implements android.location.LocationListener{
-
-        @Override
-        public void onLocationChanged(Location location) {
-            //latitud = location.getLatitude();
-            //longitud = location.getLongitude();
-            tvCoordenates.setText("Current Location:" + location.getLongitude() + location.getLatitude());
-
-        }
-
-        @Override
-        public void onStatusChanged(String s, int i, Bundle bundle) {
-
-        }
-
-        @Override
-        public void onProviderEnabled(String s) {
-
-        }
-
-        @Override
-        public void onProviderDisabled(String s) {
-
-        }
     }
+
+    @Override
+    public void onStatusChanged(String s, int i, Bundle bundle) {
+
+    }
+
+    @Override
+    public void onProviderEnabled(String s) {
+
+    }
+
+    @Override
+    public void onProviderDisabled(String s) {
+
+    }
+
+
+//    private class LocationListener implements android.location.LocationListener{
+//
+//        @Override
+//        public void onLocationChanged(Location location) {
+//            latitud = location.getLatitude();
+//            longitud = location.getLongitude();
+//            tvCoordenates.setText("Current Location:" + location.getLongitude() + location.getLatitude());
+//        }
+//        @Override
+//        public void onStatusChanged(String s, int i, Bundle bundle) {
+//
+//        }
+//
+//        @Override
+//        public void onProviderEnabled(String s) {
+//            Toast.makeText(getContext(), "s", Toast.LENGTH_SHORT).show();
+//        }
+//
+//        @Override
+//        public void onProviderDisabled(String s) {
+//
+//        }
+//    }
 }
