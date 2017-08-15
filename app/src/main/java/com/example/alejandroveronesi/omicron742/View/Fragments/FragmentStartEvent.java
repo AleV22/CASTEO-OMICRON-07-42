@@ -152,7 +152,11 @@ public class FragmentStartEvent extends Fragment implements LocationListener {
     @Override
     public void onStatusChanged(String s, int i, Bundle bundle) {
 
-    }
+        @Override
+        public void onLocationChanged(Location location) {
+            latitud = location.getLatitude();
+            longitud = location.getLongitude();
+            tvCoordenates.setText("Current Location:" + location.getLongitude() + location.getLatitude());
 
     @Override
     public void onProviderEnabled(String s) {
