@@ -3,30 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jar="C:\Users\Ale\Desktop\Kraken\CASTEO-OMICRON-07-42\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.0"
-        sha1="4731c6831826d4136e70de7abd499d89e1c73031">
-        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_85186f866035a87cffa3bcdf472dfdd222ecedfb/classes.dex" />
+        sha1="cce8ad408652904a7b542f55033240cf6e9c937a">
+        <dex dex="C:\Users\Ale\Desktop\Kraken\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_d5b5f94abac62f4c91351c93c63be098235a8f27\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/alejandroveronesi/.android/build-cache/95c357a65e557bc5417b8ab5e6493301f7a755df/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
-        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_eddf9601f21cd1ebc7be338e32a6392433e9bba5/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jar="C:\Users\Ale\Desktop\Kraken\CASTEO-OMICRON-07-42\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.0"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="/Users/alejandroveronesi/Desktop/CASTEOOMICRON742/CASTEO-OMICRON-07-42/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_45b2d581efc0c24c876018261fe112b2484e5128/classes.dex" />
+        <dex dex="C:\Users\Ale\Desktop\Kraken\CASTEO-OMICRON-07-42\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_4c508cc4d5e40062d5fc2fb250424626afe7fe4d\classes.dex" />
     </item>
 
 </items>
