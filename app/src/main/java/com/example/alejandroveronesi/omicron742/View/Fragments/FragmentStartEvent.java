@@ -134,7 +134,7 @@ public class FragmentStartEvent extends Fragment {
 //                        smsManager.sendTextMessage("+5491132870691", null, "Auxilio", null, null);
 
                           //sendLocationSMS("+5491132870691", currentLocation);
-                          Toast.makeText(getContext(),"Current Location:" + currentLocation + longitud + latitud, Toast.LENGTH_LONG).show();
+                          Toast.makeText(getContext(),"Current Location:" + longitud + latitud, Toast.LENGTH_LONG).show();
 
                     }
                 }.start();
@@ -166,7 +166,6 @@ public class FragmentStartEvent extends Fragment {
         }
     }
 
-<<<<<<< Updated upstream
     void configure_button() {
         // first check for permissions
         if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_FINE_LOCATION) !=
@@ -178,30 +177,8 @@ public class FragmentStartEvent extends Fragment {
                         , 10);
             }
             return;
-=======
-
-
-    private class LocationListener implements android.location.LocationListener{
-
-        @Override
-        public void onLocationChanged(Location location) {
-            //latitud = location.getLatitude();
-            //longitud = location.getLongitude();
-            tvCoordenates.setText("Current Location:" + location.getLongitude() + location.getLatitude());
 
         }
-
-        @Override
-        public void onStatusChanged(String s, int i, Bundle bundle) {
-
-        }
-
-        @Override
-        public void onProviderEnabled(String s) {
-
->>>>>>> Stashed changes
-        }
-
     }
 
 }
