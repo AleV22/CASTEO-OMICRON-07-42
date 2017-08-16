@@ -34,6 +34,8 @@ import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
 import static android.R.attr.phoneNumber;
+import static android.location.LocationManager.GPS_PROVIDER;
+import static android.location.LocationManager.NETWORK_PROVIDER;
 
 
 public class FragmentStartEvent extends Fragment {
@@ -112,7 +114,7 @@ public class FragmentStartEvent extends Fragment {
                         && ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
                     return;
                 }
-                locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 0, locationListener);
+                locationManager.requestLocationUpdates(NETWORK_PROVIDER, 5000, 0, locationListener);
                 new CountDownTimer(time, 1000) { // adjust the milli seconds here
 
                     public void onTick(long millisUntilFinished) {
@@ -133,8 +135,8 @@ public class FragmentStartEvent extends Fragment {
 //                        SmsManager smsManager = SmsManager.getDefault();
 //                        smsManager.sendTextMessage("+5491132870691", null, "Auxilio", null, null);
 
-                          //sendLocationSMS("+5491132870691", currentLocation);
-                          Toast.makeText(getContext(),"Current Location:" + longitud + latitud, Toast.LENGTH_LONG).show();
+                          sendLocationSMS("+5491132870691", currentLocation);
+                          Toast.makeText(getContext(),"Current Location:" + latitud + longitud, Toast.LENGTH_LONG).show();
 
                     }
                 }.start();
